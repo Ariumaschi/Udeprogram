@@ -9,6 +9,10 @@
     background-color: lightblue;
 }
 
+#header ul li {
+    list-style-type: none;
+}
+
 .bloqueImg {
     width: 30%;
     height: 150px;
@@ -45,6 +49,10 @@
 
 .listaPeliculas li article {
     text-align: center;
+}
+
+a {
+    color: blue;
 }
 
 footer {
