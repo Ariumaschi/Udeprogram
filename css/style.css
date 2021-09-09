@@ -61,3 +61,37 @@ footer {
     height: 150px;
     text-decoration: none;
 }
+
+.padre-peliculas-populares {
+    display: flex ;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    }
+    .peli {
+        width:15%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+                        padding: 5px;
+                        flex-direction: column;
+        background-color: aquamarine;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: row;
+    }
+    .main {
+        background-color: azure;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction:row;
+    }
+   
+
+    
