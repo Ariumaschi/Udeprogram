@@ -20,39 +20,9 @@
     justify-content: center;
 }
 
-* {
-    margin: 0px;
-    padding: 0%;
-}
-
 .logo { 
     border-radius: 50%;
     width: 150px;
-}
-
-.listaPeliculas { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 10px 20px;
-}
-
-.listaPeliculas ul li {
-    width: 20%;
-}
-
-.listaPeliculas li figure {
-    justify-content: center;
-    display: flex;
-}
-
-.listaPeliculas li article {
-    text-align: center;
-}
-
-a {
-    color: blue;
 }
 
 footer {
@@ -62,36 +32,60 @@ footer {
     text-decoration: none;
 }
 
+.main {
+    background-color: cyan;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction:column;
+}
+
+.section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: chartreuse;
+        flex-direction: column;
+    }
+       
 .padre-peliculas-populares {
     display: flex ;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    background-color: chocolate;
     }
+
     .peli {
-        width:15%;
-        height: auto;
         display: flex;
+        width: 10%;
+        height: 300px ;
         align-items: center;
         justify-content: center;
-                        padding: 5px;
-                        flex-direction: column;
-        background-color: aquamarine;
-    }
-    .section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        flex-direction: row;
-    }
-    .main {
-        background-color: azure;
-        padding: 10px 20px;
-        display: flex;
-        flex-direction:row;
+        padding: 30px;
+        flex-direction: column;
+        background-color:rgb(133, 32, 66);
     }
    
 
+.subtitulo {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+
+}
+
+img {
+    align-items: center;
+    height: 200px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
     
