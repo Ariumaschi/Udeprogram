@@ -39,12 +39,16 @@ a {
     width: 180px;
 }
 
+.nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .main {
-    background-color: rgb(243, 152, 187);
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    background-color: rgb(180, 206, 180);
 }
 
 .section {
@@ -52,8 +56,8 @@ a {
         justify-content: center;
         align-items: center;
         padding: 10px;
-        background-color: palegoldenrod;
         flex-direction: column;
+       
     }
        
 .padre-peliculas-populares {
@@ -62,18 +66,19 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    background-color:  chocolate;
+    background-color: rgb(243, 152, 187);
     }
 
     .peli {
         display: flex;
-        width: 10%;
+        width: 16%;
         height: 300px ;
         align-items: center;
-        justify-content: center;
-        padding: 30px;
+        justify-content: space-between;
+        padding: 10px;
         flex-direction: column;
-        background-color:rgb(167, 17, 74);
+        background-color: rgb(231, 176, 197);
+        
     }
    
 
@@ -84,17 +89,20 @@ a {
 
 }
 
-img {
+.imgpeli {
     align-items: center;
     height: 200px;
+    justify-content: flex-start;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 15px;
+    justify-content: flex-start;
 }
 
 p {
-    font-size: 15px;
+    font-size: 13px;
+    text-align: center;
 }
     
 footer {
