@@ -43,12 +43,13 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Empieza CSS de Peliculas populares*/
 .main {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
-    background-color: black}
+    background-color: black
+}
 
 .section {
         display: flex;
@@ -78,7 +79,6 @@ a {
         padding: 10px;
         flex-direction: column;
         background-color: #96582e6c;
-        
     }
    
 
@@ -86,7 +86,6 @@ a {
     margin: 0;
     text-align: left;
     width: 100%;
-
 }
 
 .imgpeli {
@@ -104,7 +103,143 @@ p {
     font-size: 13px;
     text-align: center;
 }
+
+/* Termina CSS de peliculas populares*/
+
+/*Empieza CSS de series populares*/
     
+.main2 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #f7c4a2
+       
+    }
+       
+.padre-series-populares {
+    display: flex ;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #f7c4a2;
+    }
+
+    .series {
+        display: flex;
+        width: 16%;
+        height: 300px ;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #96582e6c;
+        
+    }
+   
+
+.subtitulo {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+
+}
+
+.imgserie {
+    align-items: center;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: 15px;
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Termina CSS de series populares*/
+
+/*Empieza CSS de series mas vistas*/
+    
+.main3 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.section3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #f7c4a2
+       
+    }
+       
+.padre-mas-visto-series {
+    display: flex ;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #f7c4a2;
+    }
+
+    .mas-vistas {
+        display: flex;
+        width: 16%;
+        height: 300px ;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #96582e6c;
+        
+    }
+   
+
+.subtitulo {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+
+}
+
+.img-mas-vistas {
+    align-items: center;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: 15px;
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Termina CSS de series mas vistas*/
+
+/* Empieza CSS de footer */
+
 footer {
     display: flex;
     justify-content: center;
