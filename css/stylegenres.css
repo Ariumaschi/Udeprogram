@@ -1,9 +1,3 @@
-button {
-    color: blueviolet;
-    width: 472px;
-    height: 95px;
-}
-
-.botonseries {
-    color: brown;
-}
+ul li {
+        list-style: square
+    }
