@@ -4,27 +4,29 @@
     padding: 0px;
 }
 
-.generos1 {
-    background-color: rgb(222, 253, 192);
-    padding: 10px;
+/* header CSS */
+
+#header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    font-family: sans-serif
 }
 
-.generos1 a {
-    display: block;
+.logo { 
+    border-radius: 50%;
+    width: 180px;
 }
 
-.generos2 {
-    background-color: rgb(250, 217, 239);
-    padding: 10px;
-}
+/* listas CSS */
 
-.generos2 a {
-    display: block;
-}
-
-.generos1 .generos-clase {
-    height: 40vh;
-    margin-bottom: 10px;
+ul li {
+    list-style: none;
 }
 
 ul h2 {
@@ -52,9 +54,20 @@ ul h2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* peliculas CSS */
 
-ul li {
-    list-style: none;
+.generos1 {
+    background-color: bisque;
+    padding: 10px;
+}
+
+.generos1 a {
+    display: block;
+}
+
+.generos1 .generos-clase {
+    height: 40vh;
+    margin-bottom: 10px;
 }
 
 #accion {
@@ -89,6 +102,10 @@ ul li {
     background-image: url(../img/thriller.jpg);
 }
 
+#aventura {
+    background-image: url(../img/aventura.png);
+}
+
 #comedia h3 {
     margin-bottom: 30px;
 }
@@ -109,7 +126,7 @@ ul li {
     margin-bottom: 30px;
 }
 
-#ficcion h3 {
+#aventura h3 {
     margin-bottom: 30px;
 }
 
@@ -125,22 +142,95 @@ ul li {
     margin-bottom: 30px;
 }
 
-#header {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    background-color: white;
-    font-family: sans-serif
+/* series CSS */
+
+.generos2 {
+    background-color:bisque;
+    padding: 10px;
 }
 
-.logo { 
-    border-radius: 50%;
-    width: 180px;
+.generos2 a {
+    display: block;
 }
+
+.generos2 .generos-clase {
+    height: 40vh;
+    margin-bottom: 10px;
+}
+
+#comedia1 {
+    background-image: url(../img/comedyTv.jpg);
+}
+
+#romance1 {
+    background-image: url(../img/romanceTv.jpg);
+}
+
+#cf {
+    background-image: url(../img/cf.jpg);
+}
+
+#fantasia {
+    background-image: url(../img/fantasy.jpg);
+}
+
+#drama1 {
+    background-image: url(../img/dramaTv.jpg);
+}
+
+#crimen {
+    background-image: url(../img/crimeTv.jpg);
+}
+
+#historicas {
+    background-image: url(../img/historicas.jpg);
+}
+
+#suspenso {
+    background-image: url(../img/suspenso.jpg);
+}
+
+#telenovelas {
+    background-image: url(../img/telenovelas.jpg);
+}
+
+#comedia1 h3 {
+    margin-bottom: 30px;
+}
+
+#romance1 h3 {
+    margin-bottom: 30px;
+}
+
+#cf h3 {
+    margin-bottom: 30px;
+}
+
+#fantasia h3 {
+    margin-bottom: 30px;
+}
+
+#drama1 h3 {
+    margin-bottom: 30px;
+}
+
+#crimen h3 {
+    margin-bottom: 30px;
+}
+
+#historicas h3 {
+    margin-bottom: 30px;
+}
+
+#suspenso h3 {
+    margin-bottom: 30px;
+}
+
+#telenovelas h3 {
+    margin-bottom: 30px;
+}
+
+/* footer CSS */
 
 footer {
         display: flex;
