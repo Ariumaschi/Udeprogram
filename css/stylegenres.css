@@ -59,7 +59,34 @@ ul li {
 
 #accion {
     background-image: url(../img/accion.jpg);
+}
 
+#romance {
+    background-image: url(../img/romance.jpg);
+}
+
+#drama {
+    background-image: url(../img/drama.jpg);
+}
+
+#terror {
+    background-image: url(../img/terror.jpg);
+}
+
+#ciencia-ficcion {
+    background-image: url(../img/cienciaFiccion.jpg);
+}
+
+#comedia {
+    background-image: url(../img/comedy.jpg);
+}
+
+#animacion {
+    background-image: url(../img/animacion.jpg);
+}
+
+#thriller {
+    background-image: url(../img/thriller.jpg);
 }
 
 #comedia h3 {
