@@ -133,7 +133,7 @@ ul li {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background-color: lightblue;
+    background-color: white;
     font-family: sans-serif
 }
 
@@ -146,7 +146,7 @@ footer {
         display: flex;
         justify-content: center;
         padding-top: 5px;
-        background-color: lightblue;
+        background-color: white;
         font-family: sans-serif
     }
     
