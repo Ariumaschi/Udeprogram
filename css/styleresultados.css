@@ -59,3 +59,59 @@ a {
     text-decoration: none;
     color:black
 }
+
+/* Empieza CSS del body */
+
+.main {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #f7c4a2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padre-de-peli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peli {
+    display: flex;
+    background-color: #96582e6c;
+    padding: 10px;
+    border: solid 4px black;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.imgpeli {
+    align-items: center;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+.Titulo-de-peli {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Fecha-estreno {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.637);
+    font-weight:lighter;
+}
+
+.sinopsis {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.padre-info {
+display: flex;
+padding: 20px;
+flex-direction: column;
+}
