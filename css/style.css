@@ -54,8 +54,8 @@ a {
         align-items: center;
         padding: 10px;
         flex-direction: column;
-        background-color: #f7c4a2
-       
+        background-color: #f7c4a2;
+        border: solid 5px black;
     }
        
 .padre-peliculas-populares {
@@ -108,20 +108,14 @@ p {
 
 /*Empieza CSS de series populares*/
     
-.main2 {
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-}
-
 .section2 {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
         flex-direction: column;
-        background-color: #f7c4a2
+        background-color: #f7c4a2;
+        border: solid 5px black;
        
     }
        
@@ -174,12 +168,6 @@ p {
 
 /*Empieza CSS de series mas vistas*/
     
-.main3 {
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-}
 
 .section3 {
         display: flex;
@@ -187,8 +175,8 @@ p {
         align-items: center;
         padding: 10px;
         flex-direction: column;
-        background-color: #f7c4a2
-       
+        background-color: #f7c4a2;
+        border: solid 5px black;
     }
        
 .padre-mas-visto-series {
