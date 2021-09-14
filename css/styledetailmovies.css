@@ -23,24 +23,43 @@
 
 .main{
     display: flex;
-    flex-direction: column;
-    background-color:bisque;
+    flex-direction: row;
+    background-color: #f7c4a2;
     padding: 10px 20px;
+    
 }
 
+.imagen {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+} 
+.section {
+    display: flex;
+    flex-direction: column;
+} 
 h2 {
     justify-content:left;
     flex-direction: center;
     font-weight: 100;
+    
 } 
+span {
+    text-decoration: underline;
+    }
+
 .p1 {
-    background-color: bisque;
+    background-color:#f7c4a2;
     text-align: right;
+    font-size: larger;
     }
 
 .p4{
     text-align: right;
-    background-color: bisque;
+    background-color:#f7c4a2;
+    font-size: larger;
     }
     
 footer {
@@ -72,8 +91,10 @@ footer .integrantes li a {
     
 a {
             font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-decoration: none;
             color:black
+            
         }
         
 ul li {

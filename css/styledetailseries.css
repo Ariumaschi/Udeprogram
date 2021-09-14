@@ -7,8 +7,8 @@
 
 .main{
     display: flex;
-    flex-direction: column;
-    background-color:bisque;
+    flex-direction: row;
+    background-color: #f7c4a2;
     padding: 10px 20px;
 }
 
@@ -17,14 +17,26 @@ h2 {
     flex-direction: center;
     font-weight: 100;
 } 
+span{
+    text-decoration: underline;
+    }
 .p1 {
-    background-color: bisque;
+    background-color:#f7c4a2;
     text-align: right;
+    font-size: larger;
     }
 
 .p3 {
     text-align: left;
-    background-color: bisque;
+    background-color:#f7c4a2;
+    font-size: larger;
+    }
+    .imagen {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
     #header {

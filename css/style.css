@@ -91,9 +91,12 @@ a {
     justify-content: flex-start;
 }
 
-h3 {
+h2 {
     font-size: 15px;
     justify-content: flex-start;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 p {
