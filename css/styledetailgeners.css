@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #header {
@@ -14,7 +14,6 @@
     justify-content: left;
     align-items: center;
     background-color: white;
-    font-family: sans-serif
 }
 
 .logo { 
@@ -94,7 +93,6 @@ h4 {
         justify-content: center;
         padding-top: 5px;
         background-color:white;
-        font-family: sans-serif
     }
     
 footer img {
@@ -112,7 +110,6 @@ footer .integrantes ul {
     
 footer .integrantes li a {
         color: black;
-        font-family: sans-serif;
         text-transform: uppercase;
         padding: 5px;
         font-size: 20px

@@ -2,8 +2,9 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 #header {
     width: 100%;
@@ -13,8 +14,7 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background-color:white;
-    font-family: sans-serif
+    background-color: white;
 }
 
 ul li {
@@ -38,10 +38,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: nostretch;
-}
-
-.nav {
-    font-family: sans-serif;
 }
 
 /*Empieza CSS de Peliculas populares*/
@@ -246,7 +242,6 @@ footer {
     justify-content: center;
     padding-top: 5px;
     background-color: white;
-    font-family: sans-serif
 }
 
 footer img {

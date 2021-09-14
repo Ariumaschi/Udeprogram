@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* header CSS */
@@ -15,7 +16,6 @@
     justify-content: left;
     align-items: center;
     background-color: white;
-    font-family: sans-serif
 }
 
 .logo { 
@@ -29,11 +29,7 @@ ul li {
     list-style: none;
 }
 
-ul h2 {
-    font-family: sans-serif;
-}
-
-.generosclase {
+li .generosclase {
     height: 82vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +39,6 @@ ul h2 {
 }
 
 .generosclase h3 {
-    font-family: sans-serif;
     font-size: 40px;
     text-transform: uppercase;
     color: white;
@@ -51,7 +46,7 @@ ul h2 {
     margin-bottom: 60px;
     width: 100%;
     padding: 10px 0px 10px 10%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* peliculas CSS */
@@ -74,36 +69,72 @@ ul h2 {
     background-image: url(../img/accion.jpg);
 }
 
+li#accion.generosclase {
+    width: 24%;
+}
+
 #romance {
     background-image: url(../img/romance.jpg);
+}
+
+li#romance.generosclase {
+    width: 24%;
 }
 
 #drama {
     background-image: url(../img/drama.jpg);
 }
 
+li#drama.generosclase {
+    width: 24%;
+}
+
 #terror {
     background-image: url(../img/terror.jpg);
+}
+
+li#terror.generosclase {
+    width: 24%;
 }
 
 #ciencia-ficcion {
     background-image: url(../img/cienciaFiccion.jpg);
 }
 
+li#ciencia-ficcion.generosclase {
+    width: 24%;
+}
+
 #comedia {
     background-image: url(../img/comedy.jpg);
+}
+
+li#comedia.generosclase {
+    width: 24%;
 }
 
 #animacion {
     background-image: url(../img/animacion.jpg);
 }
 
+li#animacion.generosclase {
+    width: 24%;
+}
+
 #thriller {
     background-image: url(../img/thriller.jpg);
 }
 
+li#thriller.generosclase {
+    width: 24%;
+}
+
 #aventura {
     background-image: url(../img/aventura.png);
+}
+
+li#aventura.generosclase {
+    width: 24%;
 }
 
 #comedia h3 {
@@ -162,36 +193,72 @@ ul h2 {
     background-image: url(../img/comedyTv.jpg);
 }
 
+li#comedia1.generosclase {
+    width: 24%;
+}
+
 #romance1 {
     background-image: url(../img/romanceTv.jpg);
+}
+
+li#romance1.generosclase {
+    width: 24%;
 }
 
 #cf {
     background-image: url(../img/cf.jpg);
 }
 
+li#cf.generosclase {
+    width: 24%;
+}
+
 #fantasia {
     background-image: url(../img/fantasy.jpg);
+}
+
+li#fantasia.generosclase {
+    width: 24%;
 }
 
 #drama1 {
     background-image: url(../img/dramaTv.jpg);
 }
 
+li#drama1.generosclase {
+    width: 24%;
+}
+
 #crimen {
     background-image: url(../img/crimeTv.jpg);
+}
+
+li#crimen.generosclase {
+    width: 24%;
 }
 
 #historicas {
     background-image: url(../img/historicas.jpg);
 }
 
+li#historicas.generosclase {
+    width: 24%;
+}
+
 #suspenso {
     background-image: url(../img/suspenso.jpg);
 }
 
+li#suspenso.generosclase {
+    width: 24%;
+}
+
 #telenovelas {
     background-image: url(../img/telenovelas.jpg);
+}
+
+li#telenovelas.generosclase {
+    width: 24%;
 }
 
 #comedia1 h3 {
@@ -237,7 +304,6 @@ footer {
         justify-content: center;
         padding-top: 5px;
         background-color: white;
-        font-family: sans-serif
     }
     
 footer img {
@@ -255,7 +321,6 @@ footer .integrantes ul {
     
 footer .integrantes li a {
         color: black;
-        font-family: sans-serif;
         text-transform: uppercase;
         padding: 5px;
         font-size: 20px
