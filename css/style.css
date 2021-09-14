@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 #header {
@@ -10,14 +11,19 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color:white;
     font-family: sans-serif
 }
 
-#header ul li {
+ul li {
     list-style-type: none;
+}
+
+.logo { 
+    border-radius: 50%;
+    width: 180px;
 }
 
 a {
@@ -34,13 +40,8 @@ a {
     align-items: nostretch;
 }
 
-.logo { 
-    border-radius: 50%;
-    width: 180px;
-}
-
 .nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 /*Empieza CSS de Peliculas populares*/

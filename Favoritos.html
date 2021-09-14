@@ -5,12 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Favoritos </title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
      <!-- Comienzo encabezado -->
 
      <header id="header">
         <img class="logo" src="./img/logo.jpg" alt="Logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html"> HOME </a></li>
+
+                <li> <a href="./detailmovie.html"> DETALLE DE PELÍCULA </a></li>
+
+                <li><a href="./detail-serie.html"> DETALLE DE SERIE </a></li>
+
+                <li><a href="./Favoritos.html"> FAVORITOS </a></li>
+
+                <li><a href="./genres.html"> GÉNEROS </a></li>
+
+                <li> <a href="./detail-genres.html"> DETALLE DE GÉNEROS </a></li>
+
+                <li><a href="./Resultados-de-búsqueda.html"> RESULTADOS DE BÚSQUEDA </a></li>
+
+            </ul>
+        </nav>
+        <form action="./Resultados-de-búsqueda.html" method="GET">
+            <div>
+                <label for="Buscador">Buscador:</label>
+                <input id="Buscador" type="text" name="Buscador">
+
+            </div>
+            <button type="submit"> Enviar </button>
+        </form>
     </header>
 
      <!--------------------------------------Fin Body -------------------------------------->
