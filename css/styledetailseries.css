@@ -13,16 +13,17 @@
 }
 
 h2 {
-    justify-content:left;
+    justify-content:center;
     flex-direction: center;
     font-weight: 100;
 } 
 span{
     text-decoration: underline;
+    font-weight: bold;
     }
 .p1 {
     background-color:#f7c4a2;
-    text-align: right;
+    text-align: left;
     font-size: larger;
     }
 

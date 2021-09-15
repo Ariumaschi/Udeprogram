@@ -26,7 +26,11 @@
 /* Fin CSS encabezado */
 
 h3 {
-    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    margin-left: 55%;
 }
 
 ul li {
@@ -44,14 +48,27 @@ main {
 .main {
     padding: 10px 20px;
     display: flex;
-    flex-direction: column;
-    background-color: black
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+    
 }
 
 .imgfavs {
     align-items: center;
     height: 200px;
-    justify-content: flex-start;
+    justify-content:space-around;
+    margin-bottom: 5%;
+    width: 150px;
+    margin-right: 65%;
+    margin-top: 35%;
+    margin-left: 5%;
 }
 
 .mis-favoritos {
@@ -63,15 +80,16 @@ main {
     background-color:  #f7c4a2;
 }
 
-    favscuadrado {
+    .favscuadrado {
     display: flex;
     width: 16%;
     height: 300px ;
-    align-items: center;
-    justify-content: space-between;
+    align-items:flex-start;
+    justify-content: center;
     padding: 10px;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #96582e6c;
+    margin-left: 5%;
     }
 
 .section {
@@ -81,7 +99,7 @@ main {
         padding: 10px;
         flex-direction: column;
         background-color: #f7c4a2;
-        border: solid 5px black;
+        border: solid 10px black;
 
 }
 

@@ -42,6 +42,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     justify-content: center;
     align-items: center;
     background-color:#f7c4a2;
+    border: solid 15px black;
 }
 .div {
     display: flex;
@@ -64,6 +65,7 @@ h1 {
     font-weight: 100;
     width: 100%;
     background-color: #f7c4a2;
+    font-style:italic ;
     }
 
     img {

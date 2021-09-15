@@ -41,23 +41,24 @@
     flex-direction: column;
 } 
 h2 {
-    justify-content:left;
+    justify-content:right;
     flex-direction: center;
     font-weight: 100;
     
 } 
 span {
     text-decoration: underline;
+    font-weight: bold;
     }
 
 .p1 {
     background-color:#f7c4a2;
-    text-align: right;
+    text-align: left;
     font-size: larger;
     }
 
 .p4{
-    text-align: right;
+    text-align: left;
     background-color:#f7c4a2;
     font-size: larger;
     }
