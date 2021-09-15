@@ -5,6 +5,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+/* CSS encabezado */
+
 #header {
     width: 100%;
     height: 200px;
@@ -21,11 +23,69 @@
     width: 180px;
 }
 
+/* Fin CSS encabezado */
 
-ul li {
-    list-style: none;
+h3 {
+    text-transform: uppercase;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    font-style: italic;
+}
+
+main {
+    background-color: #f7c4a2;
+}
+
+.main {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black
+}
+
+.imgfavs {
+    align-items: center;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+.mis-favoritos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #f7c4a2;
+}
+
+    favscuadrado {
+    display: flex;
+    width: 16%;
+    height: 300px ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #96582e6c;
+    }
+
+.section {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #f7c4a2;
+        border: solid 5px black;
+
+}
+
+/* CSS footer */
 
 footer {
     display: flex;
