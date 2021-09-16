@@ -60,9 +60,9 @@ a {
     color:black
 }
 
-/* Empieza CSS del body */
+/* Empieza CSS de Resultados de busqueda */
 
-.main {
+.main-resultados {
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -71,13 +71,13 @@ a {
     align-items: center;
 }
 
-.padre-de-peli {
+.padre-de-peli-resultados {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.peli {
+.articulo-peli-resultados {
     display: flex;
     background-color: #96582e6c;
     padding: 10px;
@@ -85,33 +85,36 @@ a {
     width: 70%;
     align-items: center;
     justify-content: space-between;
+    margin: 20px;
 
 }
 
-.imgpeli {
+.imgpeli-resultados {
     align-items: center;
     height: 200px;
     justify-content: flex-start;
 }
 
-.Titulo-de-peli {
+.Titulo-de-peli-resultados {
     font-size: 20px;
     font-weight: bold;
 }
 
-.Fecha-estreno {
+.Fecha-estreno-resultados {
     font-size: 17px;
     color: rgba(0, 0, 0, 0.637);
     font-weight:lighter;
 }
 
-.sinopsis {
+.sinopsis-resultados {
     font-size: 15px;
     text-align: justify;
 }
 
-.padre-info {
+.padre-info-resultados {
 display: flex;
 padding: 20px;
 flex-direction: column;
 }
+
+/* Termina CSS de Resultados de busqueda */

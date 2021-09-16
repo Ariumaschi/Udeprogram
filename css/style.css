@@ -83,16 +83,16 @@ header form input::placeholder {
 
 
 /* Termina CSS de encabezado */
+/* tipografia para todos los HTML*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 /********************************************************************************************************
 *                                               CSS INDEX
 **********************************************************************************************************/
 
 /*Empieza CSS de Peliculas populares*/
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 .bloqueImg {
     width: 30%;
@@ -102,14 +102,14 @@ body {
     align-items: nostretch;
 }
 
-.main {
+.main-home {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     background-color: black;
 }
 
-.section {
+.section1-home {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -119,7 +119,7 @@ body {
         border: solid 5px black;
     }
        
-.padre-peliculas-populares {
+.padre-peliculas-populares-home {
     display: flex ;
     width: 100%;
     justify-content: space-around;
@@ -128,7 +128,7 @@ body {
     background-color:  #f7c4a2;
     }
 
-    .peli {
+    .peli-home {
         display: flex;
         width: 16%;
         height: 300px ;
@@ -140,43 +140,42 @@ body {
     }
    
 
-.subtitulo {
-    margin: 0;
-    text-align: left;
-    width: 100%;
-}
-
-.imgpeli {
+.imgpeli-home {
     align-items: center;
     height: 200px;
     justify-content: flex-start;
 }
 
 
-/* (en realidad este h2 es para las tres) */
-.subtitulo h2 {
-    font-size: 15px;
+.subtitulo-home {
+    font-size: 30px;
     justify-content: flex-start;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    margin: 0;
+    text-align: left;
+    width: 100%;
 }
 
-.peli p {
+
+
+/* ESTO AFECTA A TODAS LAS FECHAS DE ESTRENO y H3 DE TODAS LAS SECCIONES*/
+.Fecha-estreno-home {
     font-size: 13px;
     text-align: center;
 }
-
-.peli h3 {
+.h3-home {
     font-size: 15px;
     justify-content: flex-start;
+    text-align: center;
 }
+
 
 /* Termina CSS de peliculas populares*/
 
 /*Empieza CSS de series populares*/
     
-.section2 {
+.section2-home {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,8 +185,9 @@ body {
         border: solid 5px black;
        
     }
-       
-.padre-series-populares {
+
+    
+.padre-series-populares-home {
     display: flex ;
     width: 100%;
     justify-content: space-around;
@@ -196,7 +196,7 @@ body {
     background-color:  #f7c4a2;
     }
 
-    .series {
+    .serie-popular-home {
         display: flex;
         width: 16%;
         height: 300px ;
@@ -209,14 +209,19 @@ body {
     }
    
 
-.subtitulo {
-    margin: 0;
-    text-align: left;
-    width: 100%;
+    
+    .subtitulo2-home {
+        font-size: 30px;
+        justify-content: flex-start;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+    }
+       
 
-}
-
-.imgserie {
+.imgserie-home {
     align-items: center;
     height: 200px;
     justify-content: flex-start;
@@ -227,17 +232,12 @@ body {
     justify-content: flex-start;
 }
 
-.series p {
-    font-size: 13px;
-    text-align: center;
-}
-
 /* Termina CSS de series populares*/
 
 /*Empieza CSS de series mas vistas*/
     
 
-.section3 {
+.section3-home {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -247,7 +247,7 @@ body {
         border: solid 5px black;
     }
        
-.padre-mas-visto-series {
+.padre-mas-visto-series-home {
     display: flex ;
     width: 100%;
     justify-content: space-around;
@@ -256,7 +256,7 @@ body {
     background-color:  #f7c4a2;
     }
 
-    .mas-vistas {
+    .serie-mas-vista-home {
         display: flex;
         width: 16%;
         height: 300px ;
@@ -269,24 +269,21 @@ body {
     }
    
 
-.subtitulo {
-    margin: 0;
-    text-align: left;
-    width: 100%;
-
-}
-
+    .subtitulo3-home {
+        font-size: 30px;
+        justify-content: flex-start;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+    }
 .mas-vistas h3 {
     font-size: 15px;
     justify-content: flex-start;
 }
 
-.mas-vistas p {
-    font-size: 13px;
-    text-align: center;
-}
-
-.img-mas-vistas {
+.img-mas-vistas-home {
     align-items: center;
     height: 200px;
     justify-content: flex-start;
@@ -831,3 +828,62 @@ footer .integrantes li a {
 footer ul li a:hover {
     color: #f7c4a2;
 }
+
+/* Empieza CSS de Resultados de busqueda */
+
+.main-resultados {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #f7c4a2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padre-de-peli-resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo-peli-resultados {
+    display: flex;
+    background-color: #96582e6c;
+    padding: 10px;
+    border: solid 4px black;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.imgpeli-resultados {
+    align-items: center;
+    height: 200px;
+    justify-content: flex-start;
+}
+
+.Titulo-de-peli-resultados {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Fecha-estreno-resultados {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.637);
+    font-weight:lighter;
+}
+
+.sinopsis-resultados {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.padre-info-resultados {
+display: flex;
+padding: 20px;
+flex-direction: column;
+}
+
+/* Termina CSS de Resultados de busqueda */
