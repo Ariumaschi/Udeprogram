@@ -399,315 +399,91 @@ span {
 /********************************************************************************************************
 *                                               CSS GENEROS
 **********************************************************************************************************/
-/* listas CSS */
 
 ul li {
     list-style: none;
 
 }
 
-li .generosclase {
-    height: 82vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    display: flex;
-    align-items: flex-end;
+.main-generos {
+    margin: 10px;
 }
 
-.generosclase h3 {
-    font-size: 40px;
+.main-generos h1 {
+    font-style: italic;
     text-transform: uppercase;
-    color: white;
-    letter-spacing: 3px;
-    margin-bottom: 60px;
-    width: 100%;
-    padding: 10px 0px 10px 10%;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 50px;
 }
 
-/* peliculas CSS */
-
-.generos1 {
-    background-color: #f7c4a2;
-    padding: 10px;
-}
-
-.generos1 a {
-    display: block;
-}
-
-.generos1 .generos-clase {
-    height: 40vh;
-    margin-bottom: 10px;
-}
-
-#accion {
-    background-image: url(../img/accion.jpg);
-}
-
-li#accion.generosclase {
-    width: 24%;
-}
-
-#romance {
-    background-image: url(../img/romance.jpg);
-}
-
-li#romance.generosclase {
-    width: 24%;
-}
-
-#drama {
-    background-image: url(../img/drama.jpg);
-}
-
-li#drama.generosclase {
-    width: 24%;
-}
-
-#terror {
-    background-image: url(../img/terror.jpg);
-}
-
-li#terror.generosclase {
-    width: 24%;
-}
-
-#ciencia-ficcion {
-    background-image: url(../img/cienciaFiccion.jpg);
-}
-
-li#ciencia-ficcion.generosclase {
-    width: 24%;
-}
-
-#comedia {
-    background-image: url(../img/comedy.jpg);
-}
-
-li#comedia.generosclase {
-    width: 24%;
-}
-
-#animacion {
-    background-image: url(../img/animacion.jpg);
-}
-
-li#animacion.generosclase {
-    width: 24%;
-}
-
-#thriller {
-    background-image: url(../img/thriller.jpg);
-}
-
-li#thriller.generosclase {
-    width: 24%;
-}
-
-#aventura {
-    background-image: url(../img/aventura.png);
-}
-
-li#aventura.generosclase {
-    width: 24%;
-}
-
-#comedia h3 {
+.section-generos-peliculas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid;
+    padding: 20px;
     margin-bottom: 30px;
 }
 
-#romance h3 {
-    margin-bottom: 30px;
+.section-generos-peliculas h2 {
+    background-color: #96582e6c;
 }
 
-#ciencia-ficcion h3 {
-    margin-bottom: 30px;
+.section-generos-peliculas article {
+    height: 20px;
+    width: 200px;
+    border: solid;
+    background-color: #96582e6c;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#terror h3 {
-    margin-bottom: 30px;
+.section-generos-peliculas article:hover {
+    color: bisque;
 }
 
-#drama h3 {
-    margin-bottom: 30px;
+.section-generos-peliculas div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#aventura h3 {
-    margin-bottom: 30px;
+.section-generos-series {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid;
+    padding: 20px;
+
 }
 
-#animacion h3 {
-    margin-bottom: 30px;
+.section-generos-series h2 {
+    background-color: #96582e6c;
 }
 
-#thriller h3 {
-    margin-bottom: 30px;
+.section-generos-series article {
+    height: 20px;
+    width: 200px;
+    border: solid;
+    background-color: #96582e6c;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#accion h3 {
-    margin-bottom: 30px;
+.section-generos-series article:hover {
+    color: bisque;
 }
 
-/* series CSS */
-
-.generos2 {
-    background-color:bisque;
-    padding: 10px;
+.section-generos-series div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-.generos2 a {
-    display: block;
-}
-
-.generos2 .generos-clase {
-    height: 40vh;
-    margin-bottom: 10px;
-}
-
-#comedia1 {
-    background-image: url(../img/comedyTv.jpg);
-}
-
-li#comedia1.generosclase {
-    width: 24%;
-}
-
-#romance1 {
-    background-image: url(../img/romanceTv.jpg);
-}
-
-li#romance1.generosclase {
-    width: 24%;
-}
-
-#cf {
-    background-image: url(../img/cf.jpg);
-}
-
-li#cf.generosclase {
-    width: 24%;
-}
-
-#fantasia {
-    background-image: url(../img/fantasy.jpg);
-}
-
-li#fantasia.generosclase {
-    width: 24%;
-}
-
-#drama1 {
-    background-image: url(../img/dramaTv.jpg);
-}
-
-li#drama1.generosclase {
-    width: 24%;
-}
-
-#crimen {
-    background-image: url(../img/crimeTv.jpg);
-}
-
-li#crimen.generosclase {
-    width: 24%;
-}
-
-#historicas {
-    background-image: url(../img/historicas.jpg);
-}
-
-li#historicas.generosclase {
-    width: 24%;
-}
-
-#suspenso {
-    background-image: url(../img/suspenso.jpg);
-}
-
-li#suspenso.generosclase {
-    width: 24%;
-}
-
-#telenovelas {
-    background-image: url(../img/telenovelas.jpg);
-}
-
-li#telenovelas.generosclase {
-    width: 24%;
-}
-
-#comedia1 h3 {
-    margin-bottom: 30px;
-}
-
-#romance1 h3 {
-    margin-bottom: 30px;
-}
-
-#cf h3 {
-    margin-bottom: 30px;
-}
-
-#fantasia h3 {
-    margin-bottom: 30px;
-}
-
-#drama1 h3 {
-    margin-bottom: 30px;
-}
-
-#crimen h3 {
-    margin-bottom: 30px;
-}
-
-#historicas h3 {
-    margin-bottom: 30px;
-}
-
-#suspenso h3 {
-    margin-bottom: 30px;
-}
-
-#telenovelas h3 {
-    margin-bottom: 30px;
-}
-
-/* footer CSS */
-
-footer {
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-        background-color: white;
-    }
-    
-footer img {
-        margin-right: 10px;
-        margin: 10px;
-        border-radius: 50%;
-        width: 180px;
-    }
-    
-footer .integrantes ul {
-        display: flex;
-        flex-direction: row;
-        margin: 5px;
-    }
-    
-footer .integrantes li a {
-        color: black;
-        text-transform: uppercase;
-        padding: 5px;
-        font-size: 20px
-    }
-
-    a {
-        font-weight: bold;
-        text-decoration: none;
-        color:black
-    }
 /********************************************************************************************************
 *                                               CSS DETALLE GENEROS
 **********************************************************************************************************/
@@ -746,8 +522,7 @@ width: 100%;
 background-color:#96582e6c;
 margin-top: 50px;
 font-size: 50px;
-font-style:italic ;
-font-style:italic ;
+font-style:italic;
 
 }
 .main-detailgeners h1 {
@@ -789,47 +564,90 @@ font-style:italic ;
 *                                               CSS FAVORITOS 
 **********************************************************************************************************/
 
+.favscuadrado h3 {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    margin-left: 55%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.section-favoritos h1 {
+    font-style: italic;
+}
+
+main {
+    background-color: #f7c4a2;
+}
+
+.main-favoritos {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+.ul-favoritos {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+    
+}
+
+.imgfavs {
+    align-items: center;
+    height: 200px;
+    justify-content:space-around;
+    margin-bottom: 5%;
+    width: 150px;
+    margin-right: 65%;
+    margin-top: 35%;
+    margin-left: 5%;
+}
+
+.mis-favoritos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #f7c4a2;
+}
+
+    .favscuadrado {
+    display: flex;
+    width: 16%;
+    height: 300px ;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: row;
+    background-color: #96582e6c;
+    margin-left: 5%;
+    }
+
+.section-favoritos {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #f7c4a2;
+        border: solid 10px black;
+}
+
+.section-favoritos h1 {
+    text-transform: uppercase;
+}
+
 /********************************************************************************************************
 *                                               CSS RESULTADOS DE BUSQUEDA
 **********************************************************************************************************/
-
-/* Empieza CSS de footer */
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-    background-color: white;
-    align-items: center;
-}
-
-footer img {
-    margin-right: 10px;
-    margin: 10px;
-    border-radius: 50%;
-    width: 180px;
-}
-
-footer .integrantes ul {
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    list-style: none;
-}
-
-footer .integrantes li a {
-    color: black;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    padding: 5px;
-    font-size: 20px
-}
-
-footer ul li a:hover {
-    color: #f7c4a2;
-}
-
-/* Empieza CSS de Resultados de busqueda */
 
 .main-resultados {
     display: flex;
@@ -887,3 +705,39 @@ flex-direction: column;
 }
 
 /* Termina CSS de Resultados de busqueda */
+
+/* Empieza CSS de footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    background-color: white;
+    align-items: center;
+}
+
+footer img {
+    margin-right: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 180px;
+}
+
+footer .integrantes ul {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    list-style: none;
+}
+
+footer .integrantes li a {
+    color: black;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px
+}
+
+footer ul li a:hover {
+    color: #f7c4a2;
+}
