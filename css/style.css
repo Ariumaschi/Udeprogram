@@ -318,12 +318,23 @@ body {
 .section-detailmovie {
     display: flex;
     flex-direction: column;
+    background-color: #f7c4a2;
+} 
+.article-detailmovie {
+    background-color: #96582e6c;
+    text-decoration: black;
+    border: solid 15px black;
+    margin-top: 3%;
+} 
+.section-detailmovie img {
+   border: solid 15px black;
 } 
 
 .section-detailmovie h2 {
     justify-content:right;
     flex-direction: center;
     font-weight: 100;
+    font-style: italic;
     
 } 
 
@@ -357,32 +368,426 @@ span {
     background-color: #f7c4a2;
     padding: 10px 20px;
 }
-
+.section-detailserie img {
+    border: solid 15px black;
+}
+.article-detailserie  {
+    background-color: #96582e6c;
+    text-decoration: black;
+    border: solid 15px black;
+    margin-top: 3%;
+}
 .section-detailserie {
     display: flex;
     flex-direction: column;
+    background-color:#f7c4a2;
+    margin-top: 3%;
 } 
 
 .section-detailserie h2 {
     justify-content:right;
     flex-direction: center;
     font-weight: 100;
+    font-style: italic;
 }
 
-.p3 {
+.article-detailserie .p3{
     text-align: left;
-    background-color:#f7c4a2;
+    background-color:#f7c4a2;;
     font-size: larger;
+       }
+.article-detailserie .p3 .p2 a {
+ color: rgb(73, 71, 71);
+       }
+/********************************************************************************************************
+*                                               CSS GENEROS
+**********************************************************************************************************/
+/* listas CSS */
+
+ul li {
+    list-style: none;
+
+}
+
+li .generosclase {
+    height: 82vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.generosclase h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 10px 0px 10px 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* peliculas CSS */
+
+.generos1 {
+    background-color: #f7c4a2;
+    padding: 10px;
+}
+
+.generos1 a {
+    display: block;
+}
+
+.generos1 .generos-clase {
+    height: 40vh;
+    margin-bottom: 10px;
+}
+
+#accion {
+    background-image: url(../img/accion.jpg);
+}
+
+li#accion.generosclase {
+    width: 24%;
+}
+
+#romance {
+    background-image: url(../img/romance.jpg);
+}
+
+li#romance.generosclase {
+    width: 24%;
+}
+
+#drama {
+    background-image: url(../img/drama.jpg);
+}
+
+li#drama.generosclase {
+    width: 24%;
+}
+
+#terror {
+    background-image: url(../img/terror.jpg);
+}
+
+li#terror.generosclase {
+    width: 24%;
+}
+
+#ciencia-ficcion {
+    background-image: url(../img/cienciaFiccion.jpg);
+}
+
+li#ciencia-ficcion.generosclase {
+    width: 24%;
+}
+
+#comedia {
+    background-image: url(../img/comedy.jpg);
+}
+
+li#comedia.generosclase {
+    width: 24%;
+}
+
+#animacion {
+    background-image: url(../img/animacion.jpg);
+}
+
+li#animacion.generosclase {
+    width: 24%;
+}
+
+#thriller {
+    background-image: url(../img/thriller.jpg);
+}
+
+li#thriller.generosclase {
+    width: 24%;
+}
+
+#aventura {
+    background-image: url(../img/aventura.png);
+}
+
+li#aventura.generosclase {
+    width: 24%;
+}
+
+#comedia h3 {
+    margin-bottom: 30px;
+}
+
+#romance h3 {
+    margin-bottom: 30px;
+}
+
+#ciencia-ficcion h3 {
+    margin-bottom: 30px;
+}
+
+#terror h3 {
+    margin-bottom: 30px;
+}
+
+#drama h3 {
+    margin-bottom: 30px;
+}
+
+#aventura h3 {
+    margin-bottom: 30px;
+}
+
+#animacion h3 {
+    margin-bottom: 30px;
+}
+
+#thriller h3 {
+    margin-bottom: 30px;
+}
+
+#accion h3 {
+    margin-bottom: 30px;
+}
+
+/* series CSS */
+
+.generos2 {
+    background-color:bisque;
+    padding: 10px;
+}
+
+.generos2 a {
+    display: block;
+}
+
+.generos2 .generos-clase {
+    height: 40vh;
+    margin-bottom: 10px;
+}
+
+#comedia1 {
+    background-image: url(../img/comedyTv.jpg);
+}
+
+li#comedia1.generosclase {
+    width: 24%;
+}
+
+#romance1 {
+    background-image: url(../img/romanceTv.jpg);
+}
+
+li#romance1.generosclase {
+    width: 24%;
+}
+
+#cf {
+    background-image: url(../img/cf.jpg);
+}
+
+li#cf.generosclase {
+    width: 24%;
+}
+
+#fantasia {
+    background-image: url(../img/fantasy.jpg);
+}
+
+li#fantasia.generosclase {
+    width: 24%;
+}
+
+#drama1 {
+    background-image: url(../img/dramaTv.jpg);
+}
+
+li#drama1.generosclase {
+    width: 24%;
+}
+
+#crimen {
+    background-image: url(../img/crimeTv.jpg);
+}
+
+li#crimen.generosclase {
+    width: 24%;
+}
+
+#historicas {
+    background-image: url(../img/historicas.jpg);
+}
+
+li#historicas.generosclase {
+    width: 24%;
+}
+
+#suspenso {
+    background-image: url(../img/suspenso.jpg);
+}
+
+li#suspenso.generosclase {
+    width: 24%;
+}
+
+#telenovelas {
+    background-image: url(../img/telenovelas.jpg);
+}
+
+li#telenovelas.generosclase {
+    width: 24%;
+}
+
+#comedia1 h3 {
+    margin-bottom: 30px;
+}
+
+#romance1 h3 {
+    margin-bottom: 30px;
+}
+
+#cf h3 {
+    margin-bottom: 30px;
+}
+
+#fantasia h3 {
+    margin-bottom: 30px;
+}
+
+#drama1 h3 {
+    margin-bottom: 30px;
+}
+
+#crimen h3 {
+    margin-bottom: 30px;
+}
+
+#historicas h3 {
+    margin-bottom: 30px;
+}
+
+#suspenso h3 {
+    margin-bottom: 30px;
+}
+
+#telenovelas h3 {
+    margin-bottom: 30px;
+}
+
+/* footer CSS */
+
+footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        background-color: white;
+    }
+    
+footer img {
+        margin-right: 10px;
+        margin: 10px;
+        border-radius: 50%;
+        width: 180px;
+    }
+    
+footer .integrantes ul {
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+    }
+    
+footer .integrantes li a {
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 20px
     }
 
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color:black
+    }
 /********************************************************************************************************
 *                                               CSS DETALLE GENEROS
 **********************************************************************************************************/
+.main-detailgeners{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color:white;
+    font-size:larger
+    
 
-/********************************************************************************************************
-*                                               CSS DETALLE GENEROS
-**********************************************************************************************************/
+}
 
+.section-detailgeners{
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7c4a2;
+    border: solid 15px black;
+}
+.div-detailgeners {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px;
+    align-items: center;
+    background-color:#f7c4a2;
+    width: 100%;
+}
+.section-detailgeners h2 {
+text-align: left;
+font-weight: 100;
+width: 100%;
+background-color:#96582e6c;
+margin-top: 50px;
+font-size: 50px;
+font-style:italic ;
+font-style:italic ;
+
+}
+.main-detailgeners h1 {
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    background-color: #f7c4a2;
+    font-style:italic ;
+    font-weight: bold;
+    font-size: 70px;
+    }
+
+.main-detailgeners img {
+    
+        align-items: center;
+        height: 200px;
+        
+    }
+
+.article-detailgeners{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    width: 16%;
+    height: 300px;
+    justify-content:space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #96582e6c;
+}
+
+.article-detailgeners h4 {
+    font-size: 20px;
+    justify-content: flex-end;
+    text-align:end;
+    }
 /********************************************************************************************************
 *                                               CSS FAVORITOS 
 **********************************************************************************************************/
