@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Detalle de pelicula </title>
-    <link rel="stylesheet" href="./css/styledetailmovies.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" </head>
 
 <body>
- <!-- Comienzo encabezado -->
+    <!-- Comienzo encabezado -->
 
- <header id="header">
-    <img class="logo" src="./img/logo.jpg" alt="Logo">
+    <header id="header">
+        <img class="logo" src="./img/logo.jpg" alt="Logo">
         <nav class="nav">
             <ul>
                 <li><a href="./index.html"> HOME </a></li>
@@ -22,40 +21,35 @@
 
                 <li><a href="./genres.html"> GÉNEROS </a></li>
 
-
-
             </ul>
         </nav>
         <form action="./Resultados-de-búsqueda.html" method="GET">
-            <div>
-                <label for="Buscador">Buscador:</label>
-                <input id="Buscador" type="text" name="Buscador">
-
-            </div>
-            <button type="submit"> Enviar </button>
+            <input id="Buscador" type="text" name="Buscador" placeholder="Buscar">
+            <button type="submit"> <img src="./img/lupa.jpg" alt="Imagen lupa"> </button>
         </form>
-</header>
- <!-- Fin encabezado -->
+    </header>
+    <!-- Fin encabezado -->
 
-    <main class="main">
-        <section class="section">
-            <img  class= "imagen"src="./img/relatosSalvajes.jpg" alt="Foto de la portada de Relatos salvajes">
+    <main class="main-detailmovie">
+        <section class="section-detailmovie">
+            <img class="imagen" src="./img/relatosSalvajes.jpg" alt="Foto de la portada de Relatos salvajes">
             <article>
                 <h2>Relatos Salvajes</h2>
                 <p class="p1"> <span>Rating:</span> 8.1/10</p>
                 <p class="p1"><span>Fecha de estreno:</span> 21 de agosto de 2014</p>
                 <p class="p1"> <span>Duración:</span> 2h 2m </p>
                 <p class="p1"><span>Géneros: </span>Comedia, thriller cómico, drama, suspenso y cine de humor negro</p>
-                <p class="p4"><span>Sinopsis:</span> Seis relatos que alternan la intriga, la comedia y la violencia. Sus personajes se verán
+                <p class="p4"><span>Sinopsis:</span> Seis relatos que alternan la intriga, la comedia y la violencia.
+                    Sus personajes se verán
                     empujados hacia el abismo y hacia el innegable placer de perder el control al cruzar la delgada
                     línea que separa la civilización de la barbarie.</p>
-                
+
                 <!--Falta agregar la posibilidad de agregar la película a “favoritos”.-->
             </article>
         </section>
     </main>
 
-     <!--------------------------------------Fin Body -------------------------------------->
+    <!--------------------------------------Fin Body -------------------------------------->
     <!--------------------------------------Comienzo pie de página -------------------------------------->
     <footer>
         <img src="./img/logo.jpg" alt="Logo">

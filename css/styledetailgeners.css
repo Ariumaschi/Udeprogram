@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #header {
@@ -11,7 +10,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: white;
 }
@@ -19,6 +18,10 @@
 .logo { 
     border-radius: 50%;
     width: 180px;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 body{

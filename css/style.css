@@ -1,20 +1,42 @@
+/*Usamos el selector universal y la propiedad box-sizing para establecer que el ancho de caja se tome de borde a borde*/
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*Empieza CSS de encabezado */
 
 #header {
     width: 100%;
     height: 200px;
+    margin: 0px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+
+header ul li a:hover {
+    color: #f7c4a2;
 }
 
 ul li {
@@ -32,6 +54,46 @@ a {
     color:black
 }
 
+header form {
+    display: flex;
+    align-items:flex-end;
+}
+
+header form img {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+header form input {
+    width: 60%;
+    height: 24px;
+    margin: 0px 10px;
+    background-color: #f7c4a2;
+}
+
+header form input:hover {
+    background-color: #96582e6c;
+}
+
+header form input::placeholder {
+    padding: 10px;
+    color: white;
+}
+
+
+/* Termina CSS de encabezado */
+
+/********************************************************************************************************
+*                                               CSS INDEX
+**********************************************************************************************************/
+
+/*Empieza CSS de Peliculas populares*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .bloqueImg {
     width: 30%;
     height: 150px;
@@ -40,12 +102,11 @@ a {
     align-items: nostretch;
 }
 
-/*Empieza CSS de Peliculas populares*/
 .main {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    background-color: black
+    background-color: black;
 }
 
 .section {
@@ -91,7 +152,9 @@ a {
     justify-content: flex-start;
 }
 
-h2 {
+
+/* (en realidad este h2 es para las tres) */
+.subtitulo h2 {
     font-size: 15px;
     justify-content: flex-start;
     font-weight: bold;
@@ -99,9 +162,14 @@ h2 {
     color: black;
 }
 
-p {
+.peli p {
     font-size: 13px;
     text-align: center;
+}
+
+.peli h3 {
+    font-size: 15px;
+    justify-content: flex-start;
 }
 
 /* Termina CSS de peliculas populares*/
@@ -154,12 +222,12 @@ p {
     justify-content: flex-start;
 }
 
-h3 {
+.series h3 {
     font-size: 15px;
     justify-content: flex-start;
 }
 
-p {
+.series p {
     font-size: 13px;
     text-align: center;
 }
@@ -208,23 +276,120 @@ p {
 
 }
 
+.mas-vistas h3 {
+    font-size: 15px;
+    justify-content: flex-start;
+}
+
+.mas-vistas p {
+    font-size: 13px;
+    text-align: center;
+}
+
 .img-mas-vistas {
     align-items: center;
     height: 200px;
     justify-content: flex-start;
 }
 
-h3 {
-    font-size: 15px;
-    justify-content: flex-start;
-}
-
-p {
-    font-size: 13px;
-    text-align: center;
-}
-
 /* Termina CSS de series mas vistas*/
+
+/********************************************************************************************************
+*                                               CSS DETALLE PELICULAS
+**********************************************************************************************************/
+
+
+.main-detailmovie {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7c4a2;
+    padding: 10px 20px;
+    
+}
+
+/* imagen tambien se uso para detalle series */
+.imagen {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+} 
+.section-detailmovie {
+    display: flex;
+    flex-direction: column;
+} 
+
+.section-detailmovie h2 {
+    justify-content:right;
+    flex-direction: center;
+    font-weight: 100;
+    
+} 
+
+/* span tambien se uso para detalle series */
+span {
+    text-decoration: underline;
+    font-weight: bold;
+    }
+
+/* p1 tambien se uso para detalle series */
+.p1 {
+    background-color:#f7c4a2;
+    text-align: left;
+    font-size: larger;
+    }
+
+.p4{
+    text-align: left;
+    background-color:#f7c4a2;
+    font-size: larger;
+    }
+    
+
+/********************************************************************************************************
+*                                               CSS DETALLE SERIES
+**********************************************************************************************************/
+
+.main-detailserie {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7c4a2;
+    padding: 10px 20px;
+}
+
+.section-detailserie {
+    display: flex;
+    flex-direction: column;
+} 
+
+.section-detailserie h2 {
+    justify-content:right;
+    flex-direction: center;
+    font-weight: 100;
+}
+
+.p3 {
+    text-align: left;
+    background-color:#f7c4a2;
+    font-size: larger;
+    }
+
+/********************************************************************************************************
+*                                               CSS DETALLE GENEROS
+**********************************************************************************************************/
+
+/********************************************************************************************************
+*                                               CSS DETALLE GENEROS
+**********************************************************************************************************/
+
+/********************************************************************************************************
+*                                               CSS FAVORITOS 
+**********************************************************************************************************/
+
+/********************************************************************************************************
+*                                               CSS RESULTADOS DE BUSQUEDA
+**********************************************************************************************************/
 
 /* Empieza CSS de footer */
 
@@ -233,6 +398,7 @@ footer {
     justify-content: center;
     padding-top: 5px;
     background-color: white;
+    align-items: center;
 }
 
 footer img {
@@ -255,4 +421,8 @@ footer .integrantes li a {
     text-transform: uppercase;
     padding: 5px;
     font-size: 20px
+}
+
+footer ul li a:hover {
+    color: #f7c4a2;
 }
