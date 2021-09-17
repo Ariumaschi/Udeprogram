@@ -94,7 +94,7 @@ header form input::placeholder {
 }
 
 .div-lista-header a {
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -468,7 +468,7 @@ ul li {
     color: bisque;
 }
 
-.section-generos-peliculas div{
+.section-generos-peliculas .div-generos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -637,6 +637,7 @@ font-style:italic;
         .favscuadrado h3 {
             justify-content: center;
             text-align: center;
+            height: 40px;
         }
     
      .imgfavs {
@@ -645,6 +646,7 @@ font-style:italic;
             height: 200px;
             justify-content:space-around;
             margin: 15px;
+            width: 100%;
         }
 
 /********************************************************************************************************
@@ -825,4 +827,44 @@ footer ul li a:hover {
             display: flex;
             justify-content: center;
         }
-}
+
+        .articulo-peli-resultados {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .padre-info-resultados {
+            text-align: center;
+        }
+       
+        .ul-favoritos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .favscuadrado {
+           width: 100%;
+            border: solid 1px #f7c4a2; 
+        }
+
+        .section-generos-peliculas .div-generos {
+            
+            flex-direction: column;
+            
+        }
+
+        .section-generos-series div {
+            width: 100%;
+            flex-direction: column;
+            
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+        }
+    
+        }
+    
