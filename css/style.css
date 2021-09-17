@@ -23,12 +23,12 @@
 header ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 header ul li {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
     margin: 0px 20px;
     font-size: 25px;
     font-style: italic;
@@ -79,6 +79,29 @@ header form input:hover {
 header form input::placeholder {
     padding: 10px;
     color: white;
+}
+
+.div-logo-header {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-lista-header {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-lista-header a {
+    font-size: 48px;
+    text-align: center;
+}
+
+.formulario-header {
+    width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -407,6 +430,7 @@ ul li {
 
 .main-generos {
     margin: 10px;
+    background-color: #f7c4a2; 
 }
 
 .main-generos h1 {
@@ -421,7 +445,7 @@ ul li {
     flex-wrap: wrap;
     flex-direction: column;
     border: solid;
-    padding: 20px;
+    padding: 20px 0px ;
     margin-bottom: 30px;
 }
 
@@ -456,7 +480,7 @@ ul li {
     flex-wrap: wrap;
     flex-direction: column;
     border: solid;
-    padding: 20px;
+    padding: 20px 0px;
 
 }
 
@@ -492,15 +516,14 @@ ul li {
     flex-direction: column;
     padding: 100px;
     background-color:white;
-    font-size:larger
-    
+    font-size:larger;   
 
 }
 
 .section-detailgeners{
     display: flex;
     flex-direction: column;
-    padding: 10px ;
+    padding: 10px 0px ;
     justify-content: center;
     align-items: center;
     background-color:#f7c4a2;
@@ -685,11 +708,15 @@ flex-direction: column;
 
 /* Termina CSS de Resultados de busqueda */
 
+/********************************************************************************************************
+*                                               CSS FOOTER 
+**********************************************************************************************************/
+
 /* Empieza CSS de footer */
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 5px;
     background-color: white;
     align-items: center;
@@ -719,4 +746,83 @@ footer .integrantes li a {
 
 footer ul li a:hover {
     color: #f7c4a2;
+}
+
+.integrantes {
+    width: 70%;
+}
+
+.div-logo-footer {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/********************************************************************************************************
+*                                               CSS RESPONSIVE 
+**********************************************************************************************************/
+
+@media (max-width: 420px) {
+
+    .div-logo-header {
+        width: 33%;
+    }
+    
+    .div-lista-header {
+        width: 40%;
+    }
+
+    .div-lista-header a {
+        font-size: 25px;
+    }
+
+    .formulario-header {
+        width: 27%;
+    }
+
+        .padre-peliculas-populares-home {
+            flex-direction: column;
+        }
+
+        .Peli-home {
+            width: 100%;
+            border: solid 1px #f7c4a2;
+        }
+
+        .padre-series-populares-home {
+            flex-direction: column;
+        }
+
+        .serie-popular-home {
+            width: 100%;
+            border: solid 1px #f7c4a2; 
+        }
+
+        .padre-mas-visto-series-home {
+            flex-direction: column;
+        }
+
+        .serie-mas-vista-home {
+            width: 100%;
+            border: solid 1px #f7c4a2; 
+        }
+
+        .integrantes {
+            width: 60%;
+        }
+
+       footer .integrantes ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .integrantes ul li a {
+            font-size: 15px;
+        }
+        
+        .div-logo-footer {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
 }
