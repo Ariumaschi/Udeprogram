@@ -845,6 +845,10 @@ footer ul li a:hover {
         .favscuadrado {
            width: 100%;
             border: solid 1px #f7c4a2; 
+            display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 10px;
         }
 
         .section-generos-peliculas .div-generos {
@@ -865,6 +869,60 @@ footer ul li a:hover {
             display: flex;
             justify-content: center;
         }
-    
+        
+    .article-detailmovie p {
+       font-size: 10px;  
+    }
+    .article-detailmovie{
+        width: 50%;
+        border: solid 2px black;
+        
+    }
+    .section-detailmovie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .section-detailmovie .imagen  {
+    border: solid 2px black;
+    width: 60%;
+}
+    .main-detailserie{
+     display: flex;
+     justify-content: center;
+    }
+
+    .article-detailserie .p1 .p2 {
+        font-size: 10px;  
+     }
+     .article-detailserie{
+         width: 100%;
+         border: solid 2px black;
+         
+     }
+     .section-detailserie {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+     .section-detailserie .imagen  {
+     border: solid 2px black;
+     width: 60%;
+ }
+    .div-detailgeners {
+        display: flex;
+        flex-direction: column
+    }
+    .article-detailgeners {
+        width: 100%;
+    }
+    .section-detailgeners h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-detailgeners h1{
+        font-size: 50px
+    }
+     
         }
     
