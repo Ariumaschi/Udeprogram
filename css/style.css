@@ -341,7 +341,7 @@ body {
     background-color: #f7c4a2;
 } 
 .article-detailmovie {
-    background-color: #96582e6c;
+    background-color: #f7c4a2;
     text-decoration: black;
     border: solid 15px black;
     margin-top: 3%;
@@ -355,6 +355,7 @@ body {
     flex-direction: center;
     font-weight: 100;
     font-style: italic;
+    background-color: #96582e6c;
     
 } 
 
@@ -377,7 +378,10 @@ span {
     font-size: larger;
     }
     
-
+#button{
+    padding: 10px;
+    margin-bottom: 10px;
+    }
 /********************************************************************************************************
 *                                               CSS DETALLE SERIES
 **********************************************************************************************************/
@@ -392,7 +396,7 @@ span {
     border: solid 15px black;
 }
 .article-detailserie  {
-    background-color: #96582e6c;
+    background-color: #f7c4a2;
     text-decoration: black;
     border: solid 15px black;
     margin-top: 3%;
@@ -409,6 +413,7 @@ span {
     flex-direction: center;
     font-weight: 100;
     font-style: italic;
+    background-color:#96582e6c;
 }
 
 .article-detailserie .p3{
@@ -419,6 +424,10 @@ span {
 .article-detailserie .p3 .p2 a {
  color: rgb(73, 71, 71);
        }
+       .button  {
+       background-color: #f7c4a2;
+       padding: 10px;
+             }
 /********************************************************************************************************
 *                                               CSS GENEROS
 **********************************************************************************************************/
@@ -441,7 +450,7 @@ ul li {
 
 .section-generos-peliculas{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     flex-wrap: wrap;
     flex-direction: column;
     border: solid;
@@ -483,7 +492,6 @@ ul li {
     padding: 20px 0px;
 
 }
-
 .section-generos-series h2 {
     background-color: #96582e6c;
 }
@@ -508,6 +516,9 @@ ul li {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+
 /********************************************************************************************************
 *                                               CSS DETALLE GENEROS
 **********************************************************************************************************/
