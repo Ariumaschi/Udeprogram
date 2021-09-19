@@ -416,11 +416,7 @@ span {
 *                                               CSS GENEROS
 **********************************************************************************************************/
 
-ul li {
-    list-style: none;
-
-}
-
+/* Empieza CSS de generos con el CSS de main */
 .main-generos {
     margin: 10px;
     background-color: #f7c4a2; 
@@ -430,7 +426,11 @@ ul li {
     font-style: italic;
     text-transform: uppercase;
     height: 50px;
+    display: flex;
+    justify-content: center;
 }
+
+/* Termina CSS de main y empieza el de la primera sección (peliculas)*/
 
 .section-generos-peliculas{
     display: flex;
@@ -446,6 +446,14 @@ ul li {
     background-color: #96582e6c;
 }
 
+
+/* section .div-generos lo usamos para la parte de series también*/
+section .div-generos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .section-generos-peliculas article {
     height: 20px;
     width: 200px;
@@ -453,7 +461,9 @@ ul li {
     background-color: #96582e6c;
     padding: 20px;
     margin: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
 }
 
@@ -461,11 +471,7 @@ ul li {
     color: bisque;
 }
 
-.section-generos-peliculas .div-generos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/* Termina CSS de primera sección y empieza el de la segunda sección (series)*/
 
 .section-generos-series {
     display: flex;
@@ -487,21 +493,17 @@ ul li {
     background-color: #96582e6c;
     padding: 20px;
     margin: 20px;
-    text-align: center;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-generos-series article:hover {
     color: bisque;
 }
 
-.section-generos-series div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
+/* Termina CSS de segunda sección y todo genres.html */
 
 /********************************************************************************************************
 *                                               CSS DETALLE GENEROS
