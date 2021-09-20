@@ -141,7 +141,7 @@ a {
     }
        
 .padre-peliculas-populares-home {
-    display: flex ;
+    display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -805,8 +805,8 @@ footer {
 
 /* Comienzo media queries de index.html */
     .padre-peliculas-populares-home {
-           display: flex;
-            flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     .Peli-home {
@@ -902,7 +902,7 @@ footer {
         flex-direction: column;
     }
 
-    a {
+    .article-generos a {
         font-weight: bold;
         text-decoration: none;
         color: black;
@@ -910,6 +910,12 @@ footer {
         justify-content: center;
     }
 
+    div .article-generos {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
 /* Fin media queries de genres.html */
 
 /* Comienzo media queries de detail-movie.html */
