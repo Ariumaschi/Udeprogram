@@ -15,6 +15,7 @@
     height: 200px;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     background-color: white;
@@ -28,7 +29,7 @@ div.div-logo-header {
 
 .logo { 
     border-radius: 50%;
-    width: 180px;
+    width: 70%;
 }
 
 div.div-lista-header {
@@ -74,7 +75,7 @@ header form {
 }
 
 header form img {
-    width: 20px;
+    width: 100%;
     height: 20px;
 }
 
@@ -117,7 +118,6 @@ a {
 .main-home h1 {
     color: black;
     border: solid black;
-    display: inline;
     background-color: #f7c4a2;
     text-align: center;
     font-size: 50px;
@@ -126,7 +126,6 @@ a {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 /* Comienzo CSS peliculas populares */
@@ -400,14 +399,16 @@ span {
 .main-generos {
     margin: 10px;
     background-color: #f7c4a2; 
+    border: solid black;
 }
 
 .main-generos h1 {
-    font-style: italic;
-    text-transform: uppercase;
-    height: 50px;
+    color: black;
+    border: solid black;
+    font-size: 50px;
     display: flex;
     justify-content: center;
+    background-color: #f7c4a2;
 }
 
 /* Termina CSS de main y empieza el de la primera sección (peliculas) */
@@ -420,6 +421,8 @@ span {
     border: solid;
     padding: 20px 0px ;
     margin-bottom: 30px;
+    background-color: #f7c4a2;
+    border: solid 10px black;
 }
 
 .section-generos-peliculas h2 {
@@ -436,7 +439,7 @@ section .div-generos{
 
 .section-generos-peliculas article {
     height: 20px;
-    width: 200px;
+    width: 15%;
     border: solid;
     background-color: #96582e6c;
     padding: 20px;
@@ -445,6 +448,7 @@ section .div-generos{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    
 }
 
 .section-generos-peliculas article:hover {
@@ -460,7 +464,8 @@ section .div-generos{
     flex-direction: column;
     border: solid;
     padding: 20px 0px;
-
+    background-color: #f7c4a2;
+    border: solid 10px black;
 }
 .section-generos-series h2 {
     background-color: #96582e6c;
@@ -468,7 +473,7 @@ section .div-generos{
 
 .section-generos-series article {
     height: 20px;
-    width: 200px;
+    width: 15%;
     border: solid;
     background-color: #96582e6c;
     padding: 20px;
@@ -500,13 +505,12 @@ section .div-generos{
 
 }
 .main-detailgeners h1 {
-    text-align: center;
-    font-weight: 100;
-    width: 100%;
+    color: black;
+    border: solid black;
+    display: inline;
     background-color: #f7c4a2;
-    font-style:italic;
-    font-weight: bold;
-    font-size: 70px;
+    text-align: center;
+    font-size: 50px;
     }
 
 .section-detailgeners{
@@ -525,8 +529,7 @@ section .div-generos{
     width: 100%;
     background-color:#96582e6c;
     margin-top: 50px;
-    font-size: 50px;
-    font-style:italic;
+    font-size: 30px;
 }
 
 .div-detailgeners {
@@ -580,17 +583,20 @@ section .div-generos{
 }
 
 .section-favoritos {
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #f7c4a2;
     border: solid 10px black;
+    padding: 10px;
 }
 
 .section-favoritos h1 {
-    text-transform: uppercase;
-    font-style: italic;
+    color: black;
+    background-color: #f7c4a2;
+    text-align: center;
+    font-size: 50px;
 }
 
 .mis-favoritos {
