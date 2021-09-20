@@ -557,7 +557,7 @@ section .div-generos{
 
 .article-detailgeners h4 {
     font-size: 20px;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
     font-style: normal;
     }
