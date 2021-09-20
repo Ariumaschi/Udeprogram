@@ -1,9 +1,13 @@
-/*Usamos el selector universal y la propiedad box-sizing para establecer que el ancho de caja se tome de borde a borde*/
+/*Usamos el selector universal (* {}) para que lo que este entre corchetes aplique a todo el código, y la propiedad box-sizing para que el modelo de caja sea más fácil de usar porque descuenta  del ancho y alto lo que agregamos en relleno y borde*/
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+
+/********************************************************************************************************
+*                                               CSS ENCABEZADO
+**********************************************************************************************************/
 
 /*Empieza CSS de encabezado */
 
@@ -113,20 +117,14 @@ a {
 
 /*Empieza CSS de Peliculas populares*/
 
-.bloqueImg {
-    width: 30%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: nostretch;
-}
-
 .main-home {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     background-color: black;
 }
+
+/* Comienzo CSS peliculas populares */
 
 .section1-home {
         display: flex;
@@ -147,7 +145,7 @@ a {
     background-color:  #f7c4a2;
     }
 
-    .peli-home {
+.peli-home {
         display: flex;
         width: 16%;
         height: 300px ;
@@ -163,7 +161,6 @@ a {
     height: 175px;
 }
 
-
 .subtitulo-home {
     font-size: 30px;
     font-weight: bold;
@@ -173,18 +170,17 @@ a {
     width: 100%;
 }
 
-
-
 /* ESTO AFECTA A TODAS LAS FECHAS DE ESTRENO y H3 DE TODAS LAS SECCIONES*/
-.Fecha-estreno-home {
-    font-size: 13px;
-    text-align: center;
-}
+
 .h3-home {
     font-size: 15px;
     text-align: center;
 }
 
+.Fecha-estreno-home {
+    font-size: 13px;
+    text-align: center;
+}
 
 /* Termina CSS de peliculas populares*/
 
@@ -201,7 +197,15 @@ a {
        
     }
 
-    
+.subtitulo2-home {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    }
+
 .padre-series-populares-home {
     display: flex ;
     width: 100%;
@@ -211,43 +215,26 @@ a {
     background-color:  #f7c4a2;
     }
 
-    .serie-popular-home {
-        display: flex;
-        width: 16%;
-        height: 300px ;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        flex-direction: column;
-        background-color: #96582e6c;
-        
+.serie-popular-home {
+    display: flex;
+    width: 16%;
+    height: 300px ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #96582e6c;   
     }
-   
-
     
-    .subtitulo2-home {
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        margin: 0;
-        text-align: left;
-        width: 100%;
-    }
-       
 
 .imgserie-home {
     height: 175px;
-}
-
-.series h3 {
-    font-size: 15px;
 }
 
 /* Termina CSS de series populares*/
 
 /*Empieza CSS de series mas vistas*/
     
-
 .section3-home {
         display: flex;
         justify-content: center;
@@ -257,7 +244,16 @@ a {
         background-color: #f7c4a2;
         border: solid 5px black;
     }
-       
+ 
+.subtitulo3-home {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
 .padre-mas-visto-series-home {
     display: flex ;
     width: 100%;
@@ -267,30 +263,16 @@ a {
     background-color:  #f7c4a2;
     }
 
-    .serie-mas-vista-home {
-        display: flex;
-        width: 16%;
-        height: 300px ;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        flex-direction: column;
-        background-color: #96582e6c;
-        
+.serie-mas-vista-home {
+    display: flex;
+    width: 16%;
+    height: 300px ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #96582e6c;  
     }
-   
-
-    .subtitulo3-home {
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        margin: 0;
-        text-align: left;
-        width: 100%;
-    }
-.mas-vistas h3 {
-    font-size: 15px;
-}
 
 .img-mas-vistas-home {
     height: 175px;
@@ -302,28 +284,27 @@ a {
 *                                               CSS DETALLE PELICULAS
 **********************************************************************************************************/
 
-
 .main-detailmovie {
     display: flex;
     flex-direction: row;
     background-color: #f7c4a2;
     padding: 10px 20px;
-    
 }
-
-/* imagen tambien se uso para detalle series */
-img.imagen {
-    width: 25%;
-    border: solid 15px black;
-    margin-left: 37%;
-    margin-right: 40%;
-} 
 
 .section-detailmovie {
     display: flex;
     flex-direction: column;
     background-color: #f7c4a2;
-} 
+}
+
+/* la clase imagen tambien se uso para detalle series */
+img.imagen {
+    width: 25%;
+    border: solid 15px black;
+    margin-left: 37%;
+    margin-right: 40%;
+}  
+
 .article-detailmovie {
     background-color: #f7c4a2;
     text-decoration: black;
@@ -331,7 +312,7 @@ img.imagen {
     margin-top: 3%;
 } 
 
-.section-detailmovie h2 {
+.article-detailmovie h2 {
     justify-content:right;
     flex-direction: center;
     font-weight: 100;
@@ -340,31 +321,33 @@ img.imagen {
     
 } 
 
-/* span tambien se uso para detalle series */
-span {
-    text-decoration: underline;
-    font-weight: bold;
-    }
-
-/* p1 tambien se uso para detalle series */
+/* clase p1 tambien se uso para detalle series */
 .p1 {
     background-color:#f7c4a2;
     text-align: left;
     font-size: larger;
     }
 
-.p4{
+.p4 {
     text-align: left;
     background-color:#f7c4a2;
     font-size: larger;
     }
-    
+
+/* etiqueta span tambien se uso para detalle series */
+span {
+    text-decoration: underline;
+    font-weight: bold;
+    }
+
+/* id button tambien se uso para detalle series */    
 #button {
     padding: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
     background-color: #96582e6c;
     }
+
 /********************************************************************************************************
 *                                               CSS DETALLE SERIES
 **********************************************************************************************************/
@@ -376,12 +359,6 @@ span {
     padding: 10px 20px;
 }
 
-.article-detailserie  {
-    background-color: #f7c4a2;
-    text-decoration: black;
-    border: solid 15px black;
-    margin-top: 3%;
-}
 .section-detailserie {
     display: flex;
     flex-direction: column;
@@ -389,7 +366,14 @@ span {
     margin-top: 3%;
 } 
 
-.section-detailserie h2 {
+.article-detailserie  {
+    background-color: #f7c4a2;
+    text-decoration: black;
+    border: solid 15px black;
+    margin-top: 3%;
+}
+
+.article-detailserie h2 {
     justify-content:right;
     flex-direction: center;
     font-weight: 100;
@@ -401,17 +385,8 @@ span {
     text-align: left;
     background-color:#f7c4a2;;
     font-size: larger;
-       }
-.article-detailserie .p3 .p2 a {
- color: rgb(73, 71, 71);
-       }
+}
 
-#button  {
-       background-color: #96582e6c;
-       margin-bottom: 5px;
-       margin-top: 5px;
-       padding: 10px;
-    }
 /********************************************************************************************************
 *                                               CSS GENEROS
 **********************************************************************************************************/
@@ -430,7 +405,7 @@ span {
     justify-content: center;
 }
 
-/* Termina CSS de main y empieza el de la primera sección (peliculas)*/
+/* Termina CSS de main y empieza el de la primera sección (peliculas) */
 
 .section-generos-peliculas{
     display: flex;
@@ -508,41 +483,15 @@ section .div-generos{
 /********************************************************************************************************
 *                                               CSS DETALLE GENEROS
 **********************************************************************************************************/
+
+/* Empieza CSS de detail-genres.html, donde se uso las mismas clases para ambas sections (la de series y la de peliculas) */
+
 .main-detailgeners{
     display: flex;
     flex-direction: column;
     padding: 100px;
     background-color:white;
     font-size:larger;   
-
-}
-
-.section-detailgeners{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px ;
-    justify-content: center;
-    align-items: center;
-    background-color:#f7c4a2;
-    border: solid 15px black;
-}
-.div-detailgeners {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding: 10px;
-    align-items: center;
-    background-color:#f7c4a2;
-    width: 100%;
-}
-.section-detailgeners h2 {
-text-align: left;
-font-weight: 100;
-width: 100%;
-background-color:#96582e6c;
-margin-top: 50px;
-font-size: 50px;
-font-style:italic;
 
 }
 .main-detailgeners h1 {
@@ -555,9 +504,35 @@ font-style:italic;
     font-size: 70px;
     }
 
-.main-detailgeners img {
-    height: 170px; 
-    }
+.section-detailgeners{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px ;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7c4a2;
+    border: solid 15px black;
+}
+
+.section-detailgeners h2 {
+    text-align: left;
+    font-weight: 100;
+    width: 100%;
+    background-color:#96582e6c;
+    margin-top: 50px;
+    font-size: 50px;
+    font-style:italic;
+}
+
+.div-detailgeners {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px;
+    align-items: center;
+    background-color:#f7c4a2;
+    width: 100%;
+}
 
 .article-detailgeners{
     display: flex;
@@ -578,9 +553,18 @@ font-style:italic;
     text-align: center;
     font-style: normal;
     }
+
+.article-detailgeners img {
+    height: 170px; 
+    }
+
+/* Termina CSS de detail-genres.html */
+
 /********************************************************************************************************
 *                                               CSS FAVORITOS 
 **********************************************************************************************************/
+
+/* Empieza CSS de Favoritos.html */
 
 .main-favoritos {
     padding: 10px 20px;
@@ -589,9 +573,19 @@ font-style:italic;
     justify-content: center;
     text-align: center;
 }
-.ul-favoritos {
-    display: flex;
-    flex-direction: row;
+
+.section-favoritos {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7c4a2;
+    border: solid 10px black;
+}
+
+.section-favoritos h1 {
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 .mis-favoritos {
@@ -603,18 +597,9 @@ font-style:italic;
     background-color:  #f7c4a2;
 }
 
-.section-favoritos {
+.ul-favoritos {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f7c4a2;
-        border: solid 10px black;
-}
-
-.section-favoritos h1 {
-    text-transform: uppercase;
-    font-style: italic;
+    flex-direction: row;
 }
 
 .favscuadrado {
@@ -635,7 +620,7 @@ font-style:italic;
             height: 40px;
         }
     
-     .imgfavs {
+        .imgfavs {
             display: block;
             align-items: center;
             height: 200px;
@@ -644,9 +629,13 @@ font-style:italic;
             width: 100%;
         }
 
+/* Termina CSS de Favoritos.html */
+
 /********************************************************************************************************
 *                                               CSS RESULTADOS DE BUSQUEDA
 **********************************************************************************************************/
+
+/* Empieza CSS de resultados-de-busqueda.html donde todo aplica a todas las peliculas */
 
 .main-resultados {
     display: flex;
@@ -681,6 +670,12 @@ font-style:italic;
     justify-content: flex-start;
 }
 
+.padre-info-resultados {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    }
+
 .Titulo-de-peli-resultados {
     font-size: 20px;
     font-weight: bold;
@@ -697,11 +692,7 @@ font-style:italic;
     text-align: justify;
 }
 
-.padre-info-resultados {
-display: flex;
-padding: 20px;
-flex-direction: column;
-}
+/* CSS cuando no coincide la búsqueda con ningún resultado */
 
 .sin-resultados {
     display: none;
@@ -765,11 +756,14 @@ footer {
 /* Termina CSS de footer */
 
 /********************************************************************************************************
-*                                               CSS RESPONSIVE 
+*                                               CSS RESPONSIVE // MEDIA QUERIES
 **********************************************************************************************************/
+
+/* Usamos la estrategia mobile last */
 
 @media (max-width: 420px) {
 
+/* Comienzo media queries de header */
     .div-logo-header {
         width: 33%;
     }
@@ -797,152 +791,183 @@ footer {
         width: 30%;
     }
 
-        .padre-peliculas-populares-home {
+/* Fin media queries de header */
+
+/* Comienzo media queries de index.html */
+    .padre-peliculas-populares-home {
            display: flex;
             flex-direction: column;
-        }
-
-        .Peli-home {
-            width: 100%;
-            border: solid 1px #f7c4a2;
-        }
-
-        .padre-series-populares-home {
-            flex-direction: column;
-        }
-
-        .serie-popular-home {
-            width: 100%;
-            border: solid 1px #f7c4a2; 
-        }
-
-        .padre-mas-visto-series-home {
-            flex-direction: column;
-        }
-
-        .serie-mas-vista-home {
-            width: 100%;
-            border: solid 1px #f7c4a2; 
-        }
-
-        .integrantes {
-            width: 50%;
-        }
-
-       footer .integrantes ul {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .integrantes ul li a {
-            font-size: 15px;
-        }
-        
-        .div-logo-footer {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .div-logo-footer img {
-            width: 50%;
-        }
-
-        .articulo-peli-resultados {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .padre-info-resultados {
-            text-align: center;
-        }
-       
-        .ul-favoritos {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .favscuadrado {
-           width: 100%;
-            border: solid 1px #f7c4a2; 
-            display: flex;
-            justify-content: center;
-            margin-left: 5px;
-            margin-right: 10px;
-        }
-
-        .section-generos-peliculas .div-generos {
-            
-            flex-direction: column;
-            
-        }
-
-        .section-generos-series div {
-            width: 100%;
-            flex-direction: column;
-            
-        }
-        a {
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-            display: flex;
-            justify-content: center;
-        }
-        
-    .article-detailmovie p {
-       font-size: 10px;  
     }
-    .article-detailmovie{
+
+    .Peli-home {
+        width: 100%;
+        border: solid 1px #f7c4a2;
+    }
+
+    .padre-series-populares-home {
+        flex-direction: column;
+    }
+
+    .serie-popular-home {
+        width: 100%;
+        border: solid 1px #f7c4a2; 
+    }
+
+    .padre-mas-visto-series-home {
+        flex-direction: column;
+    }
+
+    .serie-mas-vista-home {
+        width: 100%;
+        border: solid 1px #f7c4a2; 
+    }
+
+/* Fin media queries de index.html */
+
+/* Comienzo media queries de footer */
+
+    .div-logo-footer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .div-logo-footer img {
+    width: 50%;
+    }   
+    .integrantes {
         width: 50%;
-        border: solid 2px black;
-        
     }
+
+    footer .integrantes ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .integrantes ul li a {
+        font-size: 15px;
+    }
+
+/* Fin media queries de footer */
+
+/* Comienzo media queries de resultados-de-búsqueda.html */
+
+    .articulo-peli-resultados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .padre-info-resultados {
+        text-align: center;
+    }
+    
+/* Fin media queries de resultados-de-búsqueda.html */
+
+/* Comienzo media queries de favoritos.html */
+
+    .ul-favoritos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .favscuadrado {
+        width: 100%;
+        border: solid 1px #f7c4a2; 
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+/* Fim media queries de favoritos.html */
+
+/* Comienzo media queries de genres.html */
+
+    .section-generos-peliculas .div-generos {
+        flex-direction: column;
+    }
+
+    .section-generos-series div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+/* Fin media queries de genres.html */
+
+/* Comienzo media queries de detail-movie.html */
+
+    .article-detailmovie {
+        width: 100%;
+        border: solid 2px black;
+    }
+
     .section-detailmovie {
         display: flex;
         justify-content: center;
         align-items: center;
-        }
-    .section-detailmovie .imagen  {
+    }
+    
+    .section-detailmovie .imagen {
     border: solid 2px black;
     width: 60%;
-}
+    }
+
+/* Fin media queries de detail-movie.html */
+
+/* Comienzo media queries de detail-serie.html */
+
     .main-detailserie{
      display: flex;
      justify-content: center;
     }
 
-    .article-detailserie .p1 .p2 {
-        font-size: 10px;  
-     }
-     .article-detailserie{
+    .section-detailserie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-detailserie .imagen {
+    border: solid 2px black;
+    width: 60%;
+    }
+
+     .article-detailserie {
          width: 100%;
-         border: solid 2px black;
-         
+         border: solid 2px black; 
      }
-     .section-detailserie {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         }
-     .section-detailserie .imagen  {
-     border: solid 2px black;
-     width: 60%;
- }
+
+
+/* Fin media queries de detail-serie.html */
+
+/* Comienzo media queries de detail-genres.html */
+
     .div-detailgeners {
         display: flex;
         flex-direction: column
     }
+
     .article-detailgeners {
         width: 100%;
     }
+
     .section-detailgeners h2 {
         font-size: 30px;
         text-align: center;
     }
+
     .main-detailgeners h1{
         font-size: 50px
     }
-     
+
+    /* Fin media queries detail-genres.html */
         }
     
