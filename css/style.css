@@ -60,6 +60,7 @@ div.div-lista-header a {
     text-align: center;
 }
 
+/*La pseudo-clase :hover hace que cuando el usuario se pare con el mouse sobre lo que le indicamos el :hover (en este caso, una etiqueta a dentro de un div), este va a cambiar de color al color que le asignemos dentro de los corchetes */
 div.div-lista-header a:hover {
     color: #f7c4a2;
 }
