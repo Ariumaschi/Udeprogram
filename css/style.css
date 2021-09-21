@@ -84,6 +84,7 @@ header form input {
     height: 24px;
     margin: 0px 10px;
     background-color: #f7c4a2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header form input:hover {
@@ -399,12 +400,12 @@ span {
 /* Empieza CSS de generos con el CSS de main */
 .main-generos {
     margin: 10px;
-    background-color: #f7c4a2; 
+    background-color: #f7c4a2;
+    border: solid black; 
 }
 
 .main-generos h1 {
     color: black;
-    border: solid black;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -427,6 +428,8 @@ span {
 
 .section-generos-peliculas h2 {
     background-color: #96582e6c;
+    font-weight: bold;
+    width: 100%;
 }
 
 
@@ -469,6 +472,8 @@ section .div-generos{
 }
 .section-generos-series h2 {
     background-color: #96582e6c;
+    font-weight: bold;
+    width: 100%;
 }
 
 .section-generos-series article {
@@ -524,12 +529,11 @@ section .div-generos{
 }
 
 .section-detailgeners h2 {
-    text-align: left;
-    font-weight: 100;
     width: 100%;
     background-color:#96582e6c;
-    margin-top: 50px;
     font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 .div-detailgeners {
