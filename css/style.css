@@ -350,6 +350,7 @@ span {
     margin-bottom: 5px;
     margin-top: 5px;
     background-color: #96582e6c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
 /********************************************************************************************************
@@ -399,7 +400,6 @@ span {
 .main-generos {
     margin: 10px;
     background-color: #f7c4a2; 
-    border: solid black;
 }
 
 .main-generos h1 {
