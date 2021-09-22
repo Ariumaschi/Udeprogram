@@ -338,9 +338,10 @@ img.imagen {
     background-color:#f7c4a2;
     font-size: larger;
     }
-    .article-detailmovie .p1 a {
-        font-weight: normal;
-    }
+
+.article-detailmovie .p1 a {
+    font-weight: normal;
+}
 
 /* etiqueta span tambien se uso para detalle series */
 span {
@@ -395,6 +396,7 @@ span {
     background-color:#f7c4a2;;
     font-size: larger;
 }
+
 .article-detailserie .p1 a {
     font-weight: normal;
 }
