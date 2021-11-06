@@ -10,18 +10,15 @@ fetch(url)
         let info = data.results;
         console.log(data.results);
         let peliculas = ""
-        let capturo = document.querySelector(".Section1-home")
+        let capturo = document.querySelector(".padre-peliculas-populares-home")
 
         for (let i = 0; i < 4; i++) {
-            peliculas += `
-    <div class="padre-peliculas-populares-home">
-    <article class="peli-home">
-    <img class="imgpeli-home" scr="https://image.tmdb.org/t/p/w342/lNyLSOKMMeUPr1RsL4KcRuIXwHt.jpg"  alt="">
-    <h3 class="h3-home"> ${info[i].title}</h3>
-    <p class="fecha-estreno-home"> ${info[i].release_date}<p>
-    </article>
-    </div>
-    `
+            peliculas += `    
+                    <article class="peli-home">
+                         <img class="imgpeli-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
+                        <h3 class="h3-home"> ${info[i].title}</h3>
+                        <p class="fecha-estreno-home"> ${info[i].release_date}<p>
+                    </article>`
         }
 
         capturo.innerHTML = peliculas;
