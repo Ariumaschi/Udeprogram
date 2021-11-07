@@ -441,13 +441,18 @@ span {
 }
 
 
-/* section .div-generos lo usamos para la parte de series también*/
-section .div-generos{
+
+section .div-generos-p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+section .div-generos-s{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .section-generos-peliculas article {
     height: 20px;
     width: 15%;
