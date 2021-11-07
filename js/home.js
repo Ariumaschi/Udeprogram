@@ -1,3 +1,4 @@
+// peliculas populares
 let url = `https://api.themoviedb.org/3/movie/popular?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b `;
 
 console.log(url)
@@ -29,3 +30,4 @@ fetch(url)
     .catch(function (error) {
         console.log("Error: " + error)
     })
+
