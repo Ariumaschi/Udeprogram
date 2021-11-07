@@ -15,7 +15,9 @@ fetch(url2)
         for (let i = 0; i < 4; i++) {
             series += `    
                     <article class="serie-popular-home">
+                    <a href="detail-serie.html">
                          <img class="imgserie-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
+                         </a>
                         <h3 class="h3-home"> ${info[i].name}</h3>
                         <p class="fecha-estreno-home"> ${info[i].first_air_date}<p>
                     </article>`

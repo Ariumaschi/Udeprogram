@@ -238,7 +238,7 @@ a {
 
 /* Termina CSS de series populares*/
 
-/*Empieza CSS de series mas vistas*/
+/*Empieza CSS de peliculas mas vistas*/
     
 .section3-home {
         display: flex;
@@ -259,7 +259,7 @@ a {
     width: 100%;
 }
 
-.padre-mas-visto-series-home {
+.padre-mas-visto-serie-home {
     display: flex ;
     width: 100%;
     justify-content: space-around;
@@ -268,7 +268,7 @@ a {
     background-color:  #f7c4a2;
     }
 
-.serie-mas-vista-home {
+.peli-mas-vista-home {
     display: flex;
     width: 16%;
     height: 300px ;
@@ -744,23 +744,32 @@ footer {
 /* Empieza CSS del primer div del footer */
 
 .div-logo-footer {
-    width: 40%;
+    width: 47%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.div-logo-footer img {
-    margin: 10px;
+.logo-footer {
+    margin: 5px;
     border-radius: 50%;
-    width: 180px;
+    width: 150px;
 }
+
+.tmdb {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
 
 /* Empieza CSS del segundo div del footer */
 
 .integrantes {
-    width: 60%;
+    width: 53%;
     display: flex;
     justify-content: flex-start;
+    margin: 20px;
 }
 
 .integrantes ul {
@@ -859,9 +868,14 @@ footer {
     justify-content: center;
     }
 
-    .div-logo-footer img {
+    .logo-footer {
     width: 50%;
     }   
+
+    .tmdb {
+        width: 50%;
+        height: 50%;
+    }
     .integrantes {
         width: 50%;
     }

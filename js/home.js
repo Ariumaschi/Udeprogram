@@ -16,7 +16,9 @@ fetch(url)
         for (let i = 0; i < 4; i++) {
             peliculas += `    
                     <article class="peli-home">
+                    <a href="detailmovie.html">
                          <img class="imgpeli-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
+                         </a>
                         <h3 class="h3-home"> ${info[i].title}</h3>
                         <p class="fecha-estreno-home"> ${info[i].release_date}<p>
                     </article>`
