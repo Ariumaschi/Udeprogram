@@ -15,7 +15,7 @@ fetch(url3)
         for (let i = 0; i < 4; i++) {
             pelipopu += `    
                     <article class="peli-mas-vista-home">
-                    <a href="detailmovie.html">
+                    <a href="detailmovie.html?movie_id=${info[i].id}">
                          <img class="img-mas-vistas-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
                          </a>
                         <h3 class="h3-home"> ${info[i].title}</h3>

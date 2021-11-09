@@ -11,11 +11,12 @@ fetch(url2)
         console.log(data.results);
         let series = ""
         let capturo = document.querySelector(".padre-series-populares-home")
+    
 
         for (let i = 0; i < 4; i++) {
             series += `    
                     <article class="serie-popular-home">
-                    <a href="detail-serie.html">
+                    <a href="detail-serie.html"?tv_id=${info[i].id}>
                          <img class="imgserie-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
                          </a>
                         <h3 class="h3-home"> ${info[i].name}</h3>
