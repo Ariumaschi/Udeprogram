@@ -1,6 +1,6 @@
 let queryString= location.search //obtengo la query desde la url
 let queryString2= new URLSearchParams(queryString) //transformo la query en un objeto literal
-let id =queryString2.get('tv_id'); // obtengo el dato del id del objeto literal 
+let id = queryString2.get('tv_id'); // obtengo el dato del id del objeto literal 
 console.log(queryString);
 
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
@@ -38,14 +38,14 @@ if (recuperoStorage != null) {
 let fav = document.querySelector('#button');
 
 // Chequear que id este en el array de favoritos 
-if (favoritos.includes(tv_id)) {
+if (favoritos.includes(id)) {
     fav.innerText = "Quitar de favoritos"
 }
 
 fav.addEventListener('click', function (evento) {
     evento.preventDefault();
 
-    if (favoritos.includes(tv_id)) {
+    if (favoritos.includes(id)) {
         // Si el id esta en el array
         let indice = favoritos.indexOf(id);
 
