@@ -39,7 +39,7 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
         .then(function (data) {
             console.log(data);
 
-            tmdbFavoritos += ` <ul class="ul-favoritos">
+            tmdbFavoritos += `<ul class="ul-favoritos">
             <li class="favscuadrado">
                 <h3> ${data.title}</h3>
                 <img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie' /> 
