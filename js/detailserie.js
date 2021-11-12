@@ -1,26 +1,43 @@
-let queryString= location.search //obtengo la query desde la url
-let queryString2= new URLSearchParams(queryString) //transformo la query en un objeto literal
-let id = queryString2.get('tv_id'); // obtengo el dato del id del objeto literal 
+let queryString = location.search //obtengo la query desde la url
+console.log(queryString)
+let queryString2 = new URLSearchParams(queryString) //transformo la query en un objeto literal
+let id = queryString2.get('tv_id');// obtengo el dato del id del objeto literal
 console.log(queryString);
+console.log(id)
 
-let url = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
+let url=`https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`;
 
-console.log (url)
+console.log(url)
 
 fetch(url)
-.then (function(response) {
-    return response.json ();
-})
-.then (function(data) {
-    console.log(data)
-})
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data);
+        let imagen = document.querySelector (".imagen");
+let titulo = document.querySelector (".titulo");
+let rating = document.querySelector (".rating");
+let fecha = document.querySelector (".fecha");
+let duracion = document.querySelector (".duracion");
+let sinopsis = document.querySelector (".sinopsis");
+let generos= ""
+let info= data
+let capturo = document.querySelector (".generos")
+for (let i=0; i<info.length; i++) {
+    generos +=
+    `<p class="generos"></p>`
+}
+capturo.innerText = generos
 
-
-.catch (function(error) {
-console.log("Error: " + error)
-})
-
-
+imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
+titulo.innerText+= data.name;
+rating.innerText+=data.vote_average;
+fecha.innerText+=data.first_air_date;
+duracion.innerText+=data.episode_run_time;
+generos.innerText+=data.genres;
+sinopsis.innerText+= data.overview;
+    })
 // Crear array
 
 let favoritos = [];

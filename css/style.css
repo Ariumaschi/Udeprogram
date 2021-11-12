@@ -327,21 +327,34 @@ img.imagen {
 } 
 
 /* clase p1 tambien se uso para detalle series */
-.p1 {
+.rating {
     background-color:#f7c4a2;
     text-align: left;
     font-size: larger;
-    }
-
-.p4 {
-    text-align: left;
-    background-color:#f7c4a2;
-    font-size: larger;
-    }
-
-.article-detailmovie .p1 a {
     font-weight: normal;
-}
+    }
+    .fecha {
+        background-color:#f7c4a2;
+        text-align: left;
+        font-size: larger;
+        font-weight: normal;
+        }
+        .generos {
+            background-color:#f7c4a2;
+            text-align: left;
+            font-size: larger;
+            font-weight: normal;
+            }
+            .sinopsis {
+                background-color:#f7c4a2;
+                text-align: left;
+                font-size: larger;
+                font-weight: normal;
+                }
+
+
+
+
 
 /* etiqueta span tambien se uso para detalle series */
 span {
@@ -363,7 +376,7 @@ span {
 **********************************************************************************************************/
 
 .main-detailserie {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     background-color: #f7c4a2;
     padding: 10px 20px;
@@ -373,7 +386,6 @@ span {
     display: flex;
     flex-direction: column;
     background-color:#f7c4a2;
-    margin-top: 3%;
 } 
 
 .article-detailserie  {
@@ -391,13 +403,19 @@ span {
     background-color:#96582e6c;
 }
 
-.article-detailserie .p3{
+.article-detailserie .sinopsis{
     text-align: left;
     background-color:#f7c4a2;;
     font-size: larger;
 }
 
-.article-detailserie .p1 a {
+.article-detailserie .fecha a {
+    font-weight: normal;
+}
+.article-detailserie .generos a {
+    font-weight: normal;
+}
+.article-detailserie .rating a {
     font-weight: normal;
 }
 
