@@ -1,11 +1,16 @@
 // recuperar el storage en string, entonces hay que transformar en array con parse
-let recuperoStorage = localStorage.getItem('favoritos');
+let recuperoStorage = localStorage.getItem('favoritospelis');
+let recuperoStorage2 = localStorage.getItem('favoritosseries');
 let favoritos = JSON.parse(recuperoStorage);
-console.log(favoritos);
+let favoritos2 = JSON.parse(recuperoStorage2);
+
+
+
+console.log (favoritos);
 
 
 // Capturar el contenedor de los elementos a mostrar
-let section = document.querySelector('.mis-favoritos');
+let section = document.querySelector('.mis-favoritos'); // buscar la otra seccion tmb 
 let tmdbFavoritos = ''
 
 // Si el storage esta vacio indicamos al usuario que no hay favoritos seleccionados (hacemos if y else), porque sino aparece null
@@ -23,7 +28,9 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
 
     // Adentro del for, buscar cada elemento del array (te lo da la API con un fetch)
 
-    let url = `https://api.themoviedb.org/3/movie/${id}?api_key=2482e5158beb4ba845e2e73747f644f3` // En cada posición del array, guardamos el id de cada personaje que se haya agregado a favoritos
+    let url = `https://api.themoviedb.org/3/movie/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b` // En cada posición del array, guardamos el id de cada personaje que se haya agregado a favoritos
+    // let url2 = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
+  
 
     fetch(url)
         .then(function (response) {
@@ -31,11 +38,13 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
         })
         .then(function (data) {
             console.log(data);
+
             tmdbFavoritos += ` <ul class="ul-favoritos">
             <li class="favscuadrado">
-                <h3> Nombre: ${data.name}</h3>
-                 <img class="imgfavs" src= ${data.image} alt='Imagen pelicula/serie' /> 
-        </li>`
+                <h3> ${data.title}</h3>
+                <img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie' /> 
+                </li>`
+        
 
             // mostrarlo al usuario
 
@@ -46,6 +55,28 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
             console.log(error);
 
         })
+        
+        // fetch(url2)
+        // .then(function (response) {
+        //     return response.json();
+        // })
+        // .then(function (data) {
+        //     console.log(data);
+        //     tmdbFavoritos += ` <ul class="ul-favoritos">
+        //     <li class="favscuadrado">
+        //         <h3> Nombre: ${data.name}</h3>
+        //          <img class="imgfavs" src= ${data.image} alt='Imagen pelicula/serie' /> 
+        // </li>`
+
+        //     // mostrarlo al usuario
+
+        //     section.innerHTML = tmdbFavoritos; // dejar acá porque afuera no funciona
+
+        // })
+        // .catch(function (error) {
+        //     console.log(error);
+
+        // })
 
 
 }

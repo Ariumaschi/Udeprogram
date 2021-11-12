@@ -79,7 +79,7 @@ fav.addEventListener('click', function (evento) {
     // Guardar el array en el storage (esto se hace pase lo que pase, no se mete en el else)
     let favsToString = JSON.stringify(favoritos); // Transformamos el array en una cadena de texto
 
-    localStorage.setItem("favoritos", favsToString);
+    localStorage.setItem("favoritosseries", favsToString);
 
     console.log(localStorage);
 

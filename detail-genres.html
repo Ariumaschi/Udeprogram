@@ -37,8 +37,17 @@
         </div>
 
         <div class="formulario-header">
-            <form action="Resultados-de-búsqueda.html" method="GET">
-                <input id="Buscador" type="text" name="Buscador" placeholder="Buscar">
+            <form action="./Resultados-de-búsqueda.html" method="GET">
+                <p class="message"></p>
+               
+                <input type="radio" name="media" value="all">
+                <label for="">Todo</label>
+                <input type="radio" name="media" value="movies">
+                <label for=""> Peliculas </label>
+                <input type="radio" name="media" value="series">
+                <label for=""> Series </label>  
+                <input id="Buscador" class="search" type="text" name="Buscador" placeholder="Buscar">
+
                 <button type="submit"> <img src="./img/lupa.jpg" alt="Imagen lupa"> </button>
             </form>
         </div>
@@ -137,5 +146,5 @@
     <script src="./js/detailGenreMovie.js" type="text/javascript"></script>
 </body>
 <!--------------------------------------Fin Body -------------------------------------->
-
+<script src="./js/header.js"></script>
 </html>
