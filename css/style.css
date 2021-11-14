@@ -460,18 +460,6 @@ span {
 
 
 
-/*section .div-generos-p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-section .div-generos-s{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
 div.div-generos-p {
     display : flex;
     flex-Wrap: wrap;
@@ -537,6 +525,17 @@ div.div-generos-p {
     color: bisque;
 }
 
+div.div-generos-s {
+    display : flex;
+    flex-Wrap: wrap;
+    justify-Content : space-between;
+    border: solid;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    background-color: #f7c4a2;
+    border: solid 10px black;
+}
+
 /* Termina CSS de segunda sección y todo genres.html */
 
 /********************************************************************************************************
@@ -580,15 +579,6 @@ div.div-generos-p {
     font-weight: bold;
 }
 
-/*.div-detailgeners {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding: 10px;
-    align-items: center;
-    background-color:#f7c4a2;
-    width: 100%;
-} */
 
 div.div-detailgeners {
     display : flex;
@@ -623,8 +613,8 @@ div.div-detailgeners {
     }
 
 .article-detailgeners img {
-    height: 170px; 
-    }
+width: 100%
+ }
 
 /* Termina CSS de detail-genres.html */
 
