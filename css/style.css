@@ -460,7 +460,7 @@ span {
 
 
 
-section .div-generos-p{
+/*section .div-generos-p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -470,7 +470,20 @@ section .div-generos-s{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+} */
+
+div.div-generos-p {
+    display : flex;
+    flex-Wrap: wrap;
+    justify-Content : space-between;
+    border: solid;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    background-color: #f7c4a2;
+    border: solid 10px black;
+
 }
+
 .section-generos-peliculas article {
     height: 20px;
     width: 15%;
@@ -567,7 +580,7 @@ section .div-generos-s{
     font-weight: bold;
 }
 
-.div-detailgeners {
+/*.div-detailgeners {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -575,6 +588,18 @@ section .div-generos-s{
     align-items: center;
     background-color:#f7c4a2;
     width: 100%;
+} */
+
+div.div-detailgeners {
+    display : flex;
+    flex-Wrap: wrap;
+    justify-Content : space-between;
+    border: solid;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    background-color: #f7c4a2;
+    border: solid 10px black;
+
 }
 
 .article-detailgeners{
