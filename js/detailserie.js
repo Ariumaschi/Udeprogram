@@ -19,14 +19,14 @@ fetch(url)
 let titulo = document.querySelector (".titulo");
 let rating = document.querySelector (".rating");
 let fecha = document.querySelector (".fecha");
-let duracion = document.querySelector (".duracion");
+
 let sinopsis = document.querySelector (".sinopsis");
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
 for (let i=0; i<info.length; i++) {
     generos +=
-    `<p class="generos"></p>`
+    `<a href="./detail-genres.html"?id=${info[i].genres.id}>${info[i].genres.name}</a>`
 }
 capturo.innerText = generos
 
@@ -34,9 +34,17 @@ imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
 titulo.innerText+= data.name;
 rating.innerText+=data.vote_average;
 fecha.innerText+=data.first_air_date;
-duracion.innerText+=data.episode_run_time;
+let duracion= ""
+let info2= data
+let capturo2 = document.querySelector (".duracion")
+for (let i=0; i<info.length; i++) {
+    duracion +=
+    `${data[i].duracion.episode_run_time}`
+}
+capturo2.innerText = duracion
+
 generos.innerText+=data.genres;
-sinopsis.innerText+= data.overview;
+sinopsis.innerText+=data.overview;
     })
 // Crear array
 

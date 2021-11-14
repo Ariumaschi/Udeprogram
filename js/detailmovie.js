@@ -21,7 +21,7 @@ let titulo = document.querySelector (".titulo");
 let rating = document.querySelector (".rating");
 let fecha = document.querySelector (".fecha");
 let duracion = document.querySelector (".duracion");
-let generos = document.querySelector (".generos");
+
 let sinopsis = document.querySelector (".sinopsis");
 
 imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
@@ -31,6 +31,14 @@ fecha.innerText+=data.release_date;
 duracion.innerText+=data.runtime;
 generos.innterText+=data.genres;
 sinopsis.innerText+= data.overview;
+let generos= ""
+let info= data.results
+let capturo = document.querySelector (".generos")
+for (let i=0; i<info.length; i++) {
+    generos +=
+    `<a href="./detail-genres.html"?id=${info[i].genres.id}>${info[i].genres.name}</a>` 
+}
+capturo.innerText = generos
 
 
 

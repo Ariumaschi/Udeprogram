@@ -370,6 +370,10 @@ span {
     background-color: #96582e6c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+.article-detailmovie p span {
+    text-decoration: underline;
+    font-weight: bold;
+    }
 
 /********************************************************************************************************
 *                                               CSS DETALLE SERIES
@@ -417,6 +421,11 @@ span {
 }
 .article-detailserie .rating a {
     font-weight: normal;
+}
+.article-detailserie p span {
+    text-decoration: underline;
+    font-weight: bold;
+        
 }
 
 /********************************************************************************************************
