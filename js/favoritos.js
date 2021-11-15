@@ -6,7 +6,7 @@ let favoritos2 = JSON.parse(recuperoStorage2);
 
 
 
-console.log (favoritos);
+console.log(favoritos);
 
 
 // Capturar el contenedor de los elementos a mostrar
@@ -24,13 +24,23 @@ else {
 }
 
 
+if (favoritos2 == null || favoritos2.length == 0) { //el array no toma nulo a menos que NUNCA hayas agregado algo, o que borres el localstorage, trabajo con true y false, por eso evaluamos la segunda condición que es cuando habia favoritos y los sacas todos
+    section.innerHTML = '<p> No hay favoritos seleccionados </p>'
+}
+
+else {
+    for (let i = 0; i < favoritos2.length; i++) // Hacer un for (bucle) para recorrer el array
+        buscarYMostrarFavoritos(favoritos2[i])
+}
+
+
 function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que lee JS es funciones y despues ejecuta el código
 
     // Adentro del for, buscar cada elemento del array (te lo da la API con un fetch)
 
     let url = `https://api.themoviedb.org/3/movie/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b` // En cada posición del array, guardamos el id de cada personaje que se haya agregado a favoritos
-    // let url2 = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
-  
+    let url2 = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
+
 
     fetch(url)
         .then(function (response) {
@@ -44,7 +54,7 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
                 <h3> ${data.title}</h3>
                 <img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie' /> 
                 </li>`
-        
+
 
             // mostrarlo al usuario
 
@@ -55,28 +65,28 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
             console.log(error);
 
         })
-        
-        // fetch(url2)
-        // .then(function (response) {
-        //     return response.json();
-        // })
-        // .then(function (data) {
-        //     console.log(data);
-        //     tmdbFavoritos += ` <ul class="ul-favoritos">
-        //     <li class="favscuadrado">
-        //         <h3> Nombre: ${data.name}</h3>
-        //          <img class="imgfavs" src= ${data.image} alt='Imagen pelicula/serie' /> 
-        // </li>`
 
-        //     // mostrarlo al usuario
+    fetch(url2)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            tmdbFavoritos += ` <ul class="ul-favoritos">
+            <li class="favscuadrado">
+                  <h3> ${data.name}</h3>
+                 <img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie' /> 
+         </li>`
 
-        //     section.innerHTML = tmdbFavoritos; // dejar acá porque afuera no funciona
+            // mostrarlo al usuario
 
-        // })
-        // .catch(function (error) {
-        //     console.log(error);
+            section.innerHTML = tmdbFavoritos; // dejar acá porque afuera no funciona
 
-        // })
+        })
+        .catch(function (error) {
+            console.log(error);
+
+        })
 
 
 }

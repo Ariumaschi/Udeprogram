@@ -29,16 +29,17 @@ titulo.innerText+= data.title;
 rating.innerText+=data.vote_average;
 fecha.innerText+=data.release_date;
 duracion.innerText+=data.runtime;
-generos.innterText+=data.genres;
 sinopsis.innerText+= data.overview;
 let generos= ""
-let info= data.results
+let info= data
 let capturo = document.querySelector (".generos")
 for (let i=0; i<info.length; i++) {
     generos +=
     `<a href="./detail-genres.html"?id=${info[i].genres.id}>${info[i].genres.name}</a>` 
 }
 capturo.innerText = generos
+
+generos.innterText+=data.genres;
 
 
 

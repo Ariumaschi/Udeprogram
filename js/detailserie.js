@@ -19,8 +19,17 @@ fetch(url)
 let titulo = document.querySelector (".titulo");
 let rating = document.querySelector (".rating");
 let fecha = document.querySelector (".fecha");
+let capturo2 = document.querySelector (".duracion")
 
 let sinopsis = document.querySelector (".sinopsis");
+
+imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
+titulo.innerText+= data.name;
+rating.innerText+=data.vote_average;
+fecha.innerText+=data.first_air_date;
+capturo2.innerText+=data.episode_run_time;
+
+sinopsis.innerText+=data.overview;
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
@@ -30,21 +39,7 @@ for (let i=0; i<info.length; i++) {
 }
 capturo.innerText = generos
 
-imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
-titulo.innerText+= data.name;
-rating.innerText+=data.vote_average;
-fecha.innerText+=data.first_air_date;
-let duracion= ""
-let info2= data
-let capturo2 = document.querySelector (".duracion")
-for (let i=0; i<info.length; i++) {
-    duracion +=
-    `${data[i].duracion.episode_run_time}`
-}
-capturo2.innerText = duracion
-
 generos.innerText+=data.genres;
-sinopsis.innerText+=data.overview;
     })
 // Crear array
 
