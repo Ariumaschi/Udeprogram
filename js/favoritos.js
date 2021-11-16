@@ -66,7 +66,7 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
 
         })
 
-    fetch(url2)
+        fetch(url2)
         .then(function (response) {
             return response.json();
         })
