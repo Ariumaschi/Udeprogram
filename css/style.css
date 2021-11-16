@@ -694,7 +694,16 @@ width: 100%
     font-size: 50px;
 }
 
-.mis-favoritos {
+.mis-favoritos-series {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #f7c4a2;
+}
+
+.mis-favoritos-pelis {
     display: flex;
     width: 100%;
     justify-content: space-around;

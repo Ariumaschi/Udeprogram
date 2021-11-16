@@ -52,9 +52,9 @@ let favoritos = [];
 
 // Recuperar storage
 
-let recuperoStorage = localStorage.getItem('favoritos'); // te va a devolver null o los datos
+let recuperoStorage = localStorage.getItem('favoritosSeries'); // te va a devolver null o los datos
 
-if (recuperoStorage != null) {
+if (recuperoStorage != null || favoritos.length == 0) {
     //1ero tenemos que transformarlo de cadena de texto con JSON.parse y despues lo guardamos en favoritos 
     favoritos = JSON.parse(recuperoStorage);
 }
@@ -87,7 +87,7 @@ fav.addEventListener('click', function (evento) {
     // Guardar el array en el storage (esto se hace pase lo que pase, no se mete en el else)
     let favsToString = JSON.stringify(favoritos); // Transformamos el array en una cadena de texto
 
-    localStorage.setItem("favoritosseries", favsToString);
+    localStorage.setItem("favoritosSeries", favsToString);
 
     console.log(localStorage);
 
