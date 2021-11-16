@@ -424,6 +424,7 @@ span {
 }
 .article-detailserie .generos a {
     font-weight: normal;
+
 }
 .article-detailserie .rating a {
     font-weight: normal;
@@ -431,9 +432,22 @@ span {
 .article-detailserie p span {
     text-decoration: underline;
     font-weight: bold;
-        
-}
 
+}
+.generos {
+    display: flex;
+    align-items: row;
+    flex-direction: row;
+}
+.sinopsis span {
+    text-decoration: underline;
+}
+.generos span {
+    text-decoration: underline;
+}
+.fecha span {
+    text-decoration: underline;
+}
 /********************************************************************************************************
 *                                               CSS GENEROS
 **********************************************************************************************************/
