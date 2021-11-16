@@ -33,13 +33,11 @@ sinopsis.innerText+= data.overview;
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
-for (let i=0; i<info.length; i++) {
+for (let i=0; i<info.genres.length; i++) {
     generos +=
-    `<a href="./detail-genres.html"?id=${info[i].genres.id}>${info[i].genres.name}</a>` 
+    `<p><a href="./detail-genres.html"?id=${info.genres[i].id}>${info.genres[i].name}</a></p>` 
 }
-capturo.innerText = generos
-
-generos.innterText+=data.genres;
+capturo.innerHTML += generos;
 
 
 

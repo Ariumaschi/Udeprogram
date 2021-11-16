@@ -2,8 +2,7 @@ let queryString = location.search //obtengo la query desde la url
 console.log(queryString)
 let queryString2 = new URLSearchParams(queryString) //transformo la query en un objeto literal
 let id = queryString2.get('tv_id');// obtengo el dato del id del objeto literal
-console.log(queryString);
-console.log(id)
+
 
 let url=`https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`;
 
@@ -14,7 +13,7 @@ fetch(url)
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
+       
         let imagen = document.querySelector (".imagen");
 let titulo = document.querySelector (".titulo");
 let rating = document.querySelector (".rating");
@@ -33,13 +32,19 @@ sinopsis.innerText+=data.overview;
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
-for (let i=0; i<info.length; i++) {
-    generos +=
-    `<a href="./detail-genres.html"?id=${info[i].genres.id}>${info[i].genres.name}</a>`
-}
-capturo.innerText = generos
+for (let i=0; i<info.genres.length; i++) {
+    console.log(info.genres[i].name);
+   generos +=
+  `<a href="./detail-genres.html?id=${info.genres[i].id}">${info.genres[i].name}</a>`
+ // generos = `
+     //   Género:
+      //    <a title="ver más películas del género ${info[i].genres.name}" 
+       //     href="detalleGenero.html?id=${info[i].genres.id}&tipo=tv">${info[i].genres.name}</a>
+        //`;
+    }
+capturo.innerHTML += generos
 
-generos.innerText+=data.genres;
+//eneros.innerText+=data.genres;
     })
 // Crear array
 
