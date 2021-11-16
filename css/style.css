@@ -576,7 +576,16 @@ div.div-generos-s {
     font-size: 50px;
     }
 
-.section-detailgeners{
+.section-detailgenersMovies{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px ;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7c4a2;
+    border: solid 15px black;
+}
+.section-detailgenersSeries{
     display: flex;
     flex-direction: column;
     padding: 10px 0px ;
@@ -586,7 +595,15 @@ div.div-generos-s {
     border: solid 15px black;
 }
 
-.section-detailgeners h2 {
+.section-detailgenersMovies h2 {
+    width: 100%;
+    background-color:#96582e6c;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.section-detailgenersSeries h2 {
     width: 100%;
     background-color:#96582e6c;
     font-size: 30px;
@@ -595,7 +612,20 @@ div.div-generos-s {
 }
 
 
+
 div.div-detailgeners {
+    display : flex;
+    flex-Wrap: wrap;
+    justify-Content : space-between;
+    border: solid;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    background-color: #f7c4a2;
+    border: solid 10px black;
+
+}
+
+div.div-detailgeners2 {
     display : flex;
     flex-Wrap: wrap;
     justify-Content : space-between;
