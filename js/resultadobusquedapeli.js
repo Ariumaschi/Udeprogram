@@ -1,3 +1,4 @@
+
 //buscador series
 let queryStringg = location.search // capturando la query que se envio cuando el usuario busco una palabra
 console.log(queryStringg)

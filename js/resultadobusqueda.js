@@ -19,8 +19,7 @@ fetch(url)
 
         for (let i = 0; i < info.length; i++) {
             articulosBuscados +=
-                `
-        <h1>Resultados de búsqueda: ${query}</h1>
+                ` <h1>Resultados de búsqueda: ${query}</h1>
         <section class="padre-de-peli-resultados">
 
                 <article class="articulo-peli-resultados">

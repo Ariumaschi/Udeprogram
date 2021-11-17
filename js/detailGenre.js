@@ -17,6 +17,8 @@ let nombreGenero = ol.get('name_G_Movie');
 //obtener dato de tipo sirve para series y movies//
 let tipo = ol.get('tipo');
 
+let title = document.querySelector('h1'); //capturo h1
+
 //armar un nuevo fetch //
 let url = `https://api.themoviedb.org/3/discover/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&with_genres=${id}`;
 
@@ -28,9 +30,7 @@ fetch(url)
     .then(function (data) {
         console.log(data);
 
-        //Capturo el DOM y cambio el h1 por el titulo de genero que le corresponde segun lo que toco el usuario//
-        let title = document.querySelector('h1');
-        title.innerHTML = nombreGenero
+      
 
         //armo un for para recorrer los elemetnos del array y luego reemplazarlos por los articulos del HTML//
 
@@ -82,9 +82,7 @@ fetch(url2)
     .then(function (data) {
         console.log(data);
 
-        //Capturo el DOM y cambio el h1 por el titulo de genero que le corresponde segun lo que toco el usuario//
-        let title2 = document.querySelector('h1');
-        title2.innerHTML = nombreGenero2
+       
 
         //armo un for para recorrer los elemetnos del array y luego reemplazarlos por los articulos del HTML//
 
@@ -114,11 +112,14 @@ if (tipo == "movies") {
     //HACER DESAPARECER LA SECCION DE MOVIES//
     let sectionSeries = document.querySelector('.section-detailgenersSeries')
     sectionSeries.style.display = "none";
+    title.innerHTML = nombreGenero;
+    
 }
 
 else if (tipo == "series") {
-    let sectionMovies = document.querySelector('.section-detailgenersMovies')
+    let sectionMovies = document.querySelector('.section-detailgeners')
     sectionMovies.style.display = "none";
+    title.innerHTML = nombreGenero2;
 }
 
 
