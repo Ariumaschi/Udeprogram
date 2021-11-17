@@ -68,6 +68,7 @@ if (recuperoStorage != null || favoritos.length == 0)  {
 
 // Hacer click en el link. Primero deberemos capturar el elemento
 let fav = document.querySelector('#button');
+fav.innerText = "Agregar a favoritos"
 
 // Chequear que id este en el array de favoritos 
 if (favoritos.includes(id)) {
