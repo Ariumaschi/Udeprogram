@@ -332,6 +332,7 @@ img.imagen {
     text-align: left;
     font-size: larger;
     font-weight: normal;
+    font-style: underline;
     }
     .fecha {
         background-color:#f7c4a2;
@@ -777,7 +778,6 @@ width: 100%
     padding: 10px;
     border: solid 4px black;
     align-items: center;
-    justify-content: space-between;
     margin: 20px;
     width: 100%;
 
