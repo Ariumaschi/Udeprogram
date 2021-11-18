@@ -30,7 +30,7 @@ fetch(url)
     .then(function (data) {
         console.log(data);
 
-      
+
 
         //armo un for para recorrer los elemetnos del array y luego reemplazarlos por los articulos del HTML//
 
@@ -39,10 +39,10 @@ fetch(url)
 
         for (let i = 0; i < info.length; i++) {
             articulosMovies +=
-                `<article class="article-detailgeners">
-                <h4>${info[i].original_title} </h4>
-                <img src="https://image.tmdb.org/t/p/w500/${info[i].backdrop_path}" alt="Portada">
-            </article>`
+            `<article class="article-detailgeners">
+             <h4>${info[i].original_title}</h4>
+             <img src="https://image.tmdb.org/t/p/w500/${info[i].backdrop_path}" alt="Portada">
+             </article>`
         }
 
         let capturo = document.querySelector('.div-detailgeners')
@@ -82,7 +82,7 @@ fetch(url2)
     .then(function (data) {
         console.log(data);
 
-       
+
 
         //armo un for para recorrer los elemetnos del array y luego reemplazarlos por los articulos del HTML//
 
@@ -113,7 +113,7 @@ if (tipo == "movies") {
     let sectionSeries = document.querySelector('.section-detailgenersSeries')
     sectionSeries.style.display = "none";
     title.innerHTML = nombreGenero;
-    
+
 }
 
 else if (tipo == "series") {

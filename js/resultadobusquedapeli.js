@@ -1,14 +1,13 @@
 
-//buscador series
-let queryStringg = location.search // capturando la query que se envio cuando el usuario busco una palabra
-console.log(queryStringg)
-let queryString3 = new URLSearchParams(queryStringg);  // pasala a un objeto literal
-let query1 = queryString3.get('buscador'); // capturando el input que puso el usuario (LA PROPIEDAD BUSCADOR DE LA QUERY)
-console.log(queryStringg);
-console.log(query1)
-// queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso
+//Resultado de busqueda de pelicula//
 
-let url1= `https://api.themoviedb.org/3/search/tv?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b&query=${query1}`;
+let queryStringSeries = location.search // capturando la query que construyo el usuario cuando busco una palabra
+let OLSeries = new URLSearchParams(queryStringSeries);  // a un objeto literal
+let querySeries = OLSeries.get('buscador'); // capturando el valor de la clave "buscador"
+
+// queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso//
+
+let url1 = `https://api.themoviedb.org/3/search/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&query=${querySeries}`;
 fetch(url1)
     .then(function (response) {
         return response.json()
@@ -20,30 +19,27 @@ fetch(url1)
 
         for (let i = 0; i < info.length; i++) {
             articulosBuscados +=
-                `
-        <h1>Resultados de búsqueda: ${query}</h1>
-        <section class="padre-de-peli-resultados">
-
-                <article class="articulo-peli-resultados">
-        <a href="detailmovie.html"> 
-        <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
-    </a>
-
-    <div class="padre-info-resultados">
-        <a href="detailmovie.html">
-            <h2 class="Titulo-de-peli-resultados">${info[i].title}</h2>
-        </a>
-
-        <h3 class="Fecha-estreno-resultados">${info[i].release_date}</h3>
-
-        <p class="sinopsis-resultados">${info[i].overview}</p>
-    </div>`
-        }
+                ` <article class="articulo-peli-resultados">
+                <a href="detailmovie.html"> 
+                <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
+                </a>
+                <div class="padre-info-resultados">
+                <a href="detailmovie.html">
+                <h2 class="Titulo-de-peli-resultados">${info[i].title}</h2>
+                </a>
+                <h3 class="Fecha-estreno-resultados">${info[i].release_date}</h3>
+                <p class="sinopsis-resultados">${info[i].overview}</p>
+                </div>
+                </article>`
+                }
 
 
-        let capturo = document.querySelector('.main-resultados')
+        let capturo = document.querySelector('.padre-de-peli-resultados')
         capturo.innerHTML = articulosBuscados;
 
+        //modifico el h1 segun la palabra que busco el usuario//
+        let capturo2 = document.querySelector('h1')
+        capturo2.innerText = `Resultados de búsqueda: ${querySeries}`;
 
     })
 
