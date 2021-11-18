@@ -15,7 +15,10 @@
            console.log(data);
            let info = data.results
            let articulosBuscados2 = ''
-   
+   if (info.length==0){
+let vacio= document.querySelector ('.vacio')
+vacio.innerText= `No hay concidencias con ${querySeries}`
+   } else (info.length > 0) 
            for (let i = 0; i < info.length; i++) {
                articulosBuscados2 +=
                    ` <article class="articulo-peli-resultados">
@@ -31,7 +34,7 @@
                    </div>
                    </article>`
                    }
-   
+                
    
            let capturo3 = document.querySelector('.padre-de-peli-resultados')
            capturo3.innerHTML = articulosBuscados2;

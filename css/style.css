@@ -943,8 +943,15 @@ footer {
         border: solid 1px #f7c4a2; 
     }
 
-    .padre-mas-visto-series-home {
+    .padre-mas-visto-serie-home{
+        display: flex;
         flex-direction: column;
+    }
+    .peli-mas-vista-home {
+        width: 100%;
+        border: solid 1px #f7c4a2; 
+        flex-direction: column; 
+    
     }
 
     .serie-mas-vista-home {
