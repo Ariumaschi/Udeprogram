@@ -740,11 +740,14 @@ width: 100%
         margin: 10px;
         background-color: #96582e6c;
         }
+
+        .h3favs {
+            margin: 10px
+        }
     
         .imgfavs {
             display: block;
             align-items: center;
-            margin: 15px;
             width: 100%;
         }
 

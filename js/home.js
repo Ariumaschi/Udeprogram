@@ -20,7 +20,7 @@ fetch(url)
                          <img class="imgpeli-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
                          </a>
                         <h3 class="h3-home"> ${info[i].title}</h3>
-                        <p class="fecha-estreno-home"> ${info[i].release_date}<p>
+                        <p class="fecha-estreno-home"> Fecha de estreno: ${info[i].release_date}<p>
                     </article>`
                 
         }
@@ -57,7 +57,7 @@ fetch(url)
                              <img class="imgserie-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
                              </a>
                             <h3 class="h3-home"> ${info[i].name}</h3>
-                            <p class="fecha-estreno-home"> ${info[i].first_air_date}<p>
+                            <p class="fecha-estreno-home"> Fecha de estreno: ${info[i].first_air_date}<p>
                         </article>`
             }
     
@@ -91,7 +91,7 @@ fetch(url3)
                          <img class="img-mas-vistas-home" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}"  alt="">
                          </a>
                         <h3 class="h3-home"> ${info[i].title}</h3>
-                        <p class="fecha-estreno-home"> ${info[i].release_date}<p>
+                        <p class="fecha-estreno-home"> Fecha de estreno: ${info[i].release_date}<p>
                     </article>`
         }
 
