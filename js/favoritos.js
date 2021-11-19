@@ -58,7 +58,7 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
             tmdbFavoritos1 += `<ul class="ul-favoritos">
             <li class="favscuadrado">
                 <h3 class="h3favs"> ${data.title}</h3>
-                <a href="./detailmovie.html?id=${data.id}"><img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie'/></a>
+                <a href="./detailmovie.html?movie_id=${data.id}"><img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie'/></a>
                 </li>`
 
 
@@ -90,7 +90,7 @@ function buscarYMostrarFavoritos2(id) {
             <ul class="ul-favoritos">
             <li class="favscuadrado">
                   <h3 class="h3favs"> ${data.name}</h3>
-                  <a href="./detail-serie.html?id=${data.id}"><img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie'/></a>
+                  <a href="./detail-serie.html?tv_id=${data.id}"><img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie'/></a>
          </li>`
 
             // mostrarlo al usuario
