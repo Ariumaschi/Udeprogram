@@ -92,4 +92,6 @@ fav.addEventListener('click', function (evento) {
     console.log(localStorage);
 
 })
-
+ if (genero ==null) {
+     
+ }

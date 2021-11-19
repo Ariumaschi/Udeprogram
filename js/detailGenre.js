@@ -95,7 +95,7 @@ fetch(url2)
             articulosSeries +=
                 `<article class="article-detailgeners">
                 <h4>${informacion[i].original_name} </h4>
-                <a href="./detailmovie.html?tv_id=${informacion[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${informacion[i].backdrop_path}" alt="Portada">
+                <a href="./detail-serie.html?tv_id=${informacion[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${informacion[i].backdrop_path}" alt="Portada">
       </article>`
         }
 
