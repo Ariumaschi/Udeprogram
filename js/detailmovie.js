@@ -34,7 +34,7 @@ let info= data
 let capturo = document.querySelector (".generos")
 for (let i=0; i<info.genres.length; i++) {
     generos +=
-    `<p><a href="./detail-genres.html"?id=${info.genres[i].id}>${info.genres[i].name}</a></p>` 
+    `<p><a href="./detail-genres.html?=id_G_Movie=${info.genres[i].id}&name_G_Movie=${info.genres[i].name}">${info.genres[i].name},  </a></p>` 
 }
 capturo.innerHTML += generos;
 

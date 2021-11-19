@@ -10,6 +10,7 @@ let ol = new URLSearchParams(qs);
 
 //obtener dato de id del objeto literal
 let id = ol.get('id_G_Movie');
+console.log(id);
 
 //obtener dato de nombreGenero del objeto literal
 let nombreGenero = ol.get('name_G_Movie');
