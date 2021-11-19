@@ -3,8 +3,10 @@
    let queryStringSeries = location.search // capturando la query que construyo el usuario cuando busco una palabra
    let OLSeries = new URLSearchParams(queryStringSeries);  // a un objeto literal
    let querySeries = OLSeries.get('buscador'); // capturando el valor de la clave "buscador"
+   let tipo = OLSeries.get('media');
+// queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso//
+if (tipo == "all" || tipo == "series"){
    
-   // queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso//
    
    let url2= `https://api.themoviedb.org/3/search/tv?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b&query=${querySeries}`;
    fetch(url2)
@@ -50,6 +52,7 @@ vacio.innerText= `No hay coincidencias con ${querySeries}`
        .catch(function (error) {
            console.log("Error: " + error)
        })
+    }
 
    window.addEventListener ('load', function (e) {
     let gif = document.querySelector (".gif") 
