@@ -20,7 +20,7 @@ fetch(url1)
         for (let i = 0; i < info.length; i++) {
             articulosBuscados +=
                 ` <article class="articulo-peli-resultados">
-                <a href="./detailmovie.html?${info[i].id}"> 
+                <a href="./detailmovie.html?movie_id=${info[i].id}"> 
                 <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
                 </a>
                 <div class="padre-info-resultados">

@@ -39,10 +39,11 @@ fetch(url)
 
         for (let i = 0; i < info.length; i++) {
             articulosMovies +=
-            `<article class="article-detailgeners">
+                `  
+            <article class="article-detailgeners">
              <h4>${info[i].original_title}</h4>
-             <img src="https://image.tmdb.org/t/p/w500/${info[i].backdrop_path}" alt="Portada">
-             </article>`
+             <a href="./detailmovie.html?movie_id=${info[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${info[i].backdrop_path}" alt="Portada">
+             </a></article>`
         }
 
         let capturo = document.querySelector('.div-detailgeners')
@@ -93,8 +94,8 @@ fetch(url2)
             articulosSeries +=
                 `<article class="article-detailgeners">
                 <h4>${informacion[i].original_name} </h4>
-                <img src="https://image.tmdb.org/t/p/w500/${informacion[i].backdrop_path}" alt="Portada">
-            </article>`
+                <a href="./detailmovie.html?tv_id=${informacion[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${informacion[i].backdrop_path}" alt="Portada">
+      </article>`
         }
 
         let capturo2 = document.querySelector('.div-detailgeners2')
