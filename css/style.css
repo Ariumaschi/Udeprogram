@@ -327,7 +327,7 @@ img.imagen {
 } 
 
 /* clase p1 tambien se uso para detalle series */
-.rating {
+.bold {
     background-color:#f7c4a2;
     text-align: left;
     font-size: larger;
@@ -359,7 +359,10 @@ img.imagen {
                     font-weight: normal;
                     } 
 
-
+.bold {
+font-weight: bold;
+text-decoration: underline;
+}
 
 
 

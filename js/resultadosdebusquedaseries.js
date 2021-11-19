@@ -19,10 +19,11 @@
 let vacio= document.querySelector ('.vacio')
 vacio.innerText= `No hay concidencias con ${querySeries}`
    } else (info.length > 0) 
+
            for (let i = 0; i < info.length; i++) {
                articulosBuscados2 +=
                    ` <article class="articulo-peli-resultados">
-                   <a href="detailmovie.html?${info[i].id}"> 
+                   <a href="./detail-serie.html?tv_id=${info[i].id}"> 
                    <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
                    </a>
                    <div class="padre-info-resultados">
@@ -49,4 +50,9 @@ vacio.innerText= `No hay concidencias con ${querySeries}`
        .catch(function (error) {
            console.log("Error: " + error)
        })
-   
+
+   window.addEventListener ('load', function (e) {
+    let gif = document.querySelector (".gif") 
+    gif.style.display = "none";
+
+   })

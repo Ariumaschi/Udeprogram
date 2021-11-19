@@ -60,14 +60,13 @@ let favoritos = [];
 
 let recuperoStorage = localStorage.getItem('favoritosPelis'); // te va a devolver null o los datos
 
-if (recuperoStorage != null || favoritos.length == 0)  {
+if (recuperoStorage != null)  {
     //1ero tenemos que transformarlo de cadena de texto con JSON.parse y despues lo guardamos en favoritos 
     favoritos = JSON.parse(recuperoStorage);
 }
 
 // Hacer click en el link. Primero deberemos capturar el elemento
 let fav = document.querySelector('#button');
-fav.innerText = "Agregar a favoritos"
 
 // Chequear que id este en el array de favoritos 
 if (favoritos.includes(id)) {
