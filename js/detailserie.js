@@ -23,19 +23,19 @@ let capturo2 = document.querySelector (".duracion")
 let sinopsis = document.querySelector (".sinopsis");
 
 imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
-titulo.innerText+= data.name;
-rating.innerText+=data.vote_average;
-fecha.innerText+=data.first_air_date;
-capturo2.innerText+=data.episode_run_time;
+titulo.innerHTML+= data.name;
+rating.innerHTML+=data.vote_average;
+fecha.innerHTML+=data.first_air_date;
+capturo2.innerHTML+=data.episode_run_time;
 
-sinopsis.innerText+=data.overview;
+sinopsis.innerHTML+=data.overview;
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
 for (let i=0; i<info.genres.length; i++) {
     console.log(info.genres[i].name);
    generos +=
-  `<a href="detail-genres.html?id_G_Movie=${info[i].id}&name_G_Movie=${info[i].name}&tipo=movies"> ${info[i].name} </a>`
+  `<a href="./detail-genres.html?id_G_Series=${info.genres[i].id}&name_G_Series=${info.genres[i].name}&tipo=tv">${info.genres[i].name},  </a>`
  // generos = `
      //   Género:
       //    <a title="ver más películas del género ${info[i].genres.name}" 

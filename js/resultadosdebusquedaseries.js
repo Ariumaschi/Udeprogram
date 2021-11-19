@@ -17,7 +17,7 @@
            let articulosBuscados2 = ''
    if (info.length==0){
 let vacio= document.querySelector ('.vacio')
-vacio.innerText= `No hay concidencias con ${querySeries}`
+vacio.innerText= `No hay coincidencias con ${querySeries}`
    } else (info.length > 0) 
 
            for (let i = 0; i < info.length; i++) {

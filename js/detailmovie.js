@@ -24,17 +24,17 @@ let duracion = document.querySelector (".duracion");
 let sinopsis = document.querySelector (".sinopsis");
 
 imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
-titulo.innerText+= data.title;
-rating.innerText+=data.vote_average;
-fecha.innerText+=data.release_date;
-duracion.innerText+=data.runtime;
-sinopsis.innerText+= data.overview;
+titulo.innerHTML+= data.title;
+rating.innerHTML+=data.vote_average;
+fecha.innerHTML+=data.release_date;
+duracion.innerHTML+=data.runtime;
+sinopsis.innerHTML+= data.overview;
 let generos= ""
 let info= data
 let capturo = document.querySelector (".generos")
 for (let i=0; i<info.genres.length; i++) {
     generos +=
-    `<p><a href="./detail-genres.html?=id_G_Movie=${info.genres[i].id}&name_G_Movie=${info.genres[i].name}">${info.genres[i].name},  </a></p>` 
+    `<p><a href="./detail-genres.html?id_G_Movie=${info.genres[i].id}&name_G_Movie=${info.genres[i].name}&tipo=movies">${info.genres[i].name},  </a></p>` 
 }
 capturo.innerHTML += generos;
 
