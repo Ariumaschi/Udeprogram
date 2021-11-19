@@ -10,12 +10,15 @@ console.log(favoritos);
 // Capturar el contenedor de los elementos a mostrar
 let section = document.querySelector('.mis-favoritos-pelis');
 let tmdbFavoritos1 = ''
-let section2 = document.querySelector('.mis-favoritos-series'); // buscar la otra seccion tmb 
+let section2 = document.querySelector('.mis-favoritos-series');
 let tmdbFavoritos2 = ''
 
 // Si el storage esta vacio indicamos al usuario que no hay favoritos seleccionados (hacemos if y else), porque sino aparece null
 if (favoritos == null || favoritos.length == 0) { //el array no toma nulo a menos que NUNCA hayas agregado algo, o que borres el localstorage, trabajo con true y false, por eso evaluamos la segunda condición que es cuando habia favoritos y los sacas todos
-    section.innerHTML = '<p> No hay favoritos seleccionados </p>'
+    section.innerHTML = '<p> No hay peliculas favoritas seleccionadas </p>'
+    section.style.color = "red"
+    section.style.fontWeight = "bold"
+
 }
 
 else {
@@ -26,7 +29,9 @@ else {
 
 
 if (favoritos2 == null || favoritos2.length == 0) { //el array no toma nulo a menos que NUNCA hayas agregado algo, o que borres el localstorage, trabajo con true y false, por eso evaluamos la segunda condición que es cuando habia favoritos y los sacas todos
-    section.innerHTML = '<p> No hay favoritos seleccionados </p>'
+    section2.innerHTML = '<p> No hay series favoritas seleccionadas </p>'
+    section2.style.color = "red"
+    section2.style.fontWeight = "bold"
 }
 
 else {
@@ -35,6 +40,7 @@ else {
     }
 }
 
+// PARTE DE PELICULAS
 
 function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que lee JS es funciones y despues ejecuta el código
 
@@ -68,6 +74,8 @@ function buscarYMostrarFavoritos(id) { // no importa donde la crees, primero que
 
 }
 
+// PARTE DE SERIES 
+
 function buscarYMostrarFavoritos2(id) {
 
     let url2 = `https://api.themoviedb.org/3/tv/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
@@ -78,7 +86,8 @@ function buscarYMostrarFavoritos2(id) {
         })
         .then(function (data) {
             console.log(data);
-            tmdbFavoritos2 += ` <ul class="ul-favoritos">
+            tmdbFavoritos2 += `
+            <ul class="ul-favoritos">
             <li class="favscuadrado">
                   <h3 class="h3favs"> ${data.name}</h3>
                   <a href="./detail-serie.html?id=${data.id}"><img class="imgfavs" src=https://image.tmdb.org/t/p/w342${data.poster_path} alt='Imagen pelicula/serie'/></a>

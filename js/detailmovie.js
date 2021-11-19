@@ -2,7 +2,6 @@ let queryString = location.search //obtengo la query desde la url
 console.log(queryString)
 let queryString2 = new URLSearchParams(queryString) //transformo la query en un objeto literal
 let id = queryString2.get('movie_id'); // obtengo el dato del id del objeto literal
-console.log(queryString);
 console.log(id)
 
 let url=`https://api.themoviedb.org/3/movie/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`

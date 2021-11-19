@@ -442,12 +442,15 @@ span {
 }
 .sinopsis span {
     text-decoration: underline;
+    font-weight: bold;
 }
 .generos span {
     text-decoration: underline;
+    font-weight: bold;
 }
 .fecha span {
     text-decoration: underline;
+    font-weight: bold;
 }
 /********************************************************************************************************
 *                                               CSS GENEROS
@@ -690,15 +693,13 @@ width: 100%
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    background-color: #f7c4a2;
 }
 
 .section-favoritos {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f7c4a2;
-    border: solid 10px black;
+    flex-direction: column;;
     padding: 10px;
 }
 
@@ -709,6 +710,13 @@ width: 100%
     font-size: 50px;
 }
 
+.section-favoritos h2 {
+    color:#96582e6c;
+    font-style: italic;
+    text-align: left;
+    font-size: 40px;
+}
+
 .mis-favoritos-series {
     display: flex;
     width: 100%;
@@ -716,6 +724,8 @@ width: 100%
     align-items: center;
     padding: 10px;
     background-color:  #f7c4a2;
+    margin: 10px;
+    border: solid 10px black;
 }
 
 .mis-favoritos-pelis {
@@ -725,6 +735,8 @@ width: 100%
     align-items: center;
     padding: 10px;
     background-color:  #f7c4a2;
+    border: solid 10px black;
+    margin: 10px;
 }
 
 .ul-favoritos {
