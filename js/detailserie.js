@@ -35,7 +35,7 @@ let capturo = document.querySelector (".generos")
 for (let i=0; i<info.genres.length; i++) {
     console.log(info.genres[i].name);
    generos +=
-  `<a href="./detail-genres.html?id_G_Series=${info.genres[i].id}&name_G_Series=${info.genres[i].name}&tipo=tv">${info.genres[i].name},  </a>`
+  `<a href="./detail-genres.html?id_G_Series=${info.genres[i].id}&name_G_Series=${info.genres[i].name}&tipo=series">${info.genres[i].name},  </a>`
  // generos = `
      //   Género:
       //    <a title="ver más películas del género ${info[i].genres.name}" 
