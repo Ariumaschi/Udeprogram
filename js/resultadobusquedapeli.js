@@ -17,6 +17,10 @@ if (tipo == "all" || tipo == "movies") {
             console.log(data);
             let info = data.results
             let articulosBuscados = ''
+            if (info.length == 0) {
+                let vacio = document.querySelector('.vacio')
+                vacio.innerText = `No hay coincidencias con ${queryPelis}`
+            } else (info.length > 0)
 
             for (let i = 0; i < info.length; i++) {
                 articulosBuscados +=

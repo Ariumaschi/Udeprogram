@@ -20,7 +20,7 @@ if (tipo2 == "all" || tipo2 == "series") {
             if (info.length == 0) {
                 let vacio = document.querySelector('.vacio')
                 vacio.innerText = `No hay coincidencias con ${querySeries}`
-            } else (info.length > 0)
+            } else {
 
             for (let i = 0; i < info.length; i++) {
                 articulosBuscados2 +=
@@ -35,7 +35,8 @@ if (tipo2 == "all" || tipo2 == "series") {
                    <h3 class="Fecha-estreno-resultados">${info[i].first_air_date}</h3>
                    <p class="sinopsis-resultados">${info[i].overview}</p>
                    </div>
-                   </article>`
+                   </article>` 
+                }
             }
 
 
