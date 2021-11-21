@@ -9,10 +9,12 @@ formulario.addEventListener('submit', function(evento){
     if(inputField.value == ""){
         message.innerText = "El campo es obligatorio";
         inputField.style.outline = "2px solid red"
+        message.style.color = "red" // aplica para el else if tambien ya que se usa "message" en ambos casos
     }
 
     else if(inputField.value.length < 3){
         message.innerText = "Debe escribir al menos 3 caracteres"
+        inputField.style.outline = "2px solid red"
     }
 
     else {
