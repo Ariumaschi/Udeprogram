@@ -4,9 +4,10 @@
 let queryStringPelis = location.search // capturando la query que construyo el usuario cuando busco una palabra
 let OLPelis = new URLSearchParams(queryStringPelis);  // a un objeto literal
 let queryPelis = OLPelis.get('buscador'); // capturando el valor de la clave "buscador"
-let tipo2 = OLPelis.get('media');
+let tipo = OLPelis.get('media');
 // queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso//
-if (tipo2 == "all" || tipo2 == "movies"){
+if (tipo == "all" || tipo == "movies") {
+
     let url1 = `https://api.themoviedb.org/3/search/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&query=${queryPelis}`;
     fetch(url1)
         .then(function (response) {
@@ -31,7 +32,7 @@ if (tipo2 == "all" || tipo2 == "movies"){
                     <p class="sinopsis-resultados">${info[i].overview}</p>
                     </div>
                     </article>`
-                    }
+            }
 
 
             let capturo = document.querySelector('.padre-de-peli-resultados')
@@ -40,17 +41,19 @@ if (tipo2 == "all" || tipo2 == "movies"){
             //modifico el h1 segun la palabra que busco el usuario//
             let capturo2 = document.querySelector('h1')
             capturo2.innerText = `Resultados de búsqueda: ${queryPelis}`;
-                
-    })
+
+        })
 
 
-    .catch(function (error) {
-        console.log("Error: " + error)
-    })
+        .catch(function (error) {
+            console.log("Error: " + error)
+        })
+
 }
 
-window.addEventListener ('load', function (e) {
-    let gif = document.querySelector (".gif") 
+
+window.addEventListener('load', function (e) {
+    let gif = document.querySelector(".gif")
     gif.style.display = "none";
 
-   })
+})
