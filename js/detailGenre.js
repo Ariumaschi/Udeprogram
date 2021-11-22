@@ -10,8 +10,6 @@ let ol = new URLSearchParams(qs);
 
 //obtener valor de id de la query string//
 let id = ol.get('id_G_Movie');
-console.log(id);
-
 
 //armar un fetch //
 let url = `https://api.themoviedb.org/3/discover/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&with_genres=${id}`;
@@ -120,7 +118,7 @@ let tipo = ol.get('tipo');
 let title = document.querySelector('h1'); //capturo h1
 
 if (tipo == "movies") {
-    //HACER DESAPARECER LA SECCION DE MOVIES//
+    //HACER DESAPARECER LA SECCION DE SERIES//
     let sectionSeries = document.querySelector('.section-detailgenersSeries')
     sectionSeries.style.display = "none";
     title.innerHTML = nombreGenero;
@@ -128,6 +126,7 @@ if (tipo == "movies") {
 }
 
 else if (tipo == "series") {
+      //HACER DESAPARECER LA SECCION DE SERIES//
     let sectionMovies = document.querySelector('.section-detailgeners')
     sectionMovies.style.display = "none";
     title.innerHTML = nombreGenero2;
