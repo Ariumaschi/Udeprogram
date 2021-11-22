@@ -21,8 +21,11 @@ let fecha = document.querySelector (".fecha");
 let capturo2 = document.querySelector (".duracion")
 
 let sinopsis = document.querySelector (".sinopsis");
-
+if (data.poster_path==null){
+    imagen.src="./img/noImage.png"
+}else {
 imagen.src =`https://image.tmdb.org/t/p/w342${data.poster_path}`;
+}
 titulo.innerHTML+= data.name;
 rating.innerHTML+=data.vote_average;
 fecha.innerHTML+=data.first_air_date;

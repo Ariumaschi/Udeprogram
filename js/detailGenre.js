@@ -39,13 +39,21 @@ fetch(url)
         let articulosMovies = ''
 
         for (let i = 0; i < info.length; i++) {
+ if (info[i].poster_path==null){
+    articulosMovies +=
+    `<article class="article-detailgeners">
+     <h4>${info[i].original_title}</h4>
+     <a href="./detailmovie.html?movie_id=${info[i].id}"> <img src="./img/noImage.png" alt="Portada">
+     </a></article>`
+ } else {
             articulosMovies +=
-                `  
-            <article class="article-detailgeners">
+            `<article class="article-detailgeners">
              <h4>${info[i].original_title}</h4>
              <a href="./detailmovie.html?movie_id=${info[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
              </a></article>`
+ }
         }
+        
 
         let capturo = document.querySelector('.div-detailgeners')
         capturo.innerHTML = articulosMovies;
@@ -92,13 +100,20 @@ fetch(url2)
         let articulosSeries = ''
 
         for (let i = 0; i < informacion.length; i++) {
-            articulosSeries +=
+           if (informacion[i].poster_path== null) {
+               articulosSeries +=
                 `<article class="article-detailgeners">
+                <h4>${informacion[i].original_name} </h4>
+                <a href="./detail-serie.html?tv_id=${informacion[i].id}"> <img src="./img/noImage.png" alt="Portada">
+      </article>`
+        } else {
+            articulosSeries +=
+            `<article class="article-detailgeners">
                 <h4>${informacion[i].original_name} </h4>
                 <a href="./detail-serie.html?tv_id=${informacion[i].id}"> <img src="https://image.tmdb.org/t/p/w500/${informacion[i].poster_path}" alt="Portada">
       </article>`
         }
-
+    }
         let capturo2 = document.querySelector('.div-detailgeners2')
         capturo2.innerHTML = articulosSeries;
     })

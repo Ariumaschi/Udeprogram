@@ -20,9 +20,24 @@ if (tipo == "all" || tipo == "movies") {
             if (info.length == 0) {
                 let vacio = document.querySelector('.vacio')
                 vacio.innerText = `No hay coincidencias con ${queryPelis}`
-            } else (info.length > 0)
+            } else {
 
             for (let i = 0; i < info.length; i++) {
+              if (info[i].poster_path==null){
+                articulosBuscados +=
+                ` <article class="articulo-peli-resultados">
+                <a href="./detailmovie.html?movie_id=${info[i].id}"> 
+                <img class="imgpeli-resultados" src="./img/noImage.png" alt="Portada">
+                </a>
+                <div class="padre-info-resultados">
+                <a href="detailmovie.html">
+                <h2 class="Titulo-de-peli-resultados">${info[i].title}</h2>
+                </a>
+                <h3 class="Fecha-estreno-resultados">${info[i].release_date}</h3>
+                <p class="sinopsis-resultados">${info[i].overview}</p>
+                </div>
+                </article>`  
+              } else{
                 articulosBuscados +=
                     ` <article class="articulo-peli-resultados">
                     <a href="./detailmovie.html?movie_id=${info[i].id}"> 
@@ -36,7 +51,9 @@ if (tipo == "all" || tipo == "movies") {
                     <p class="sinopsis-resultados">${info[i].overview}</p>
                     </div>
                     </article>`
+              }
             }
+        }
 
 
             let capturo = document.querySelector('.padre-de-peli-resultados')

@@ -23,6 +23,21 @@ if (tipo2 == "all" || tipo2 == "series") {
             } else {
 
             for (let i = 0; i < info.length; i++) {
+                if (info[i].poster_path==null) {
+                    articulosBuscados2 +=
+                    ` <article class="articulo-peli-resultados">
+                   <a href="./detail-serie.html?tv_id=${info[i].id}"> 
+                   <img class="imgpeli-resultados" src="./img/noImage.png" alt="Portada">
+                   </a>
+                   <div class="padre-info-resultados">
+                   <a href="detail-serie.html">
+                   <h2 class="Titulo-de-peli-resultados">${info[i].name}</h2>
+                   </a>
+                   <h3 class="Fecha-estreno-resultados">${info[i].first_air_date}</h3>
+                   <p class="sinopsis-resultados">${info[i].overview}</p>
+                   </div>
+                   </article>` 
+                } else{
                 articulosBuscados2 +=
                     ` <article class="articulo-peli-resultados">
                    <a href="./detail-serie.html?tv_id=${info[i].id}"> 
@@ -37,6 +52,7 @@ if (tipo2 == "all" || tipo2 == "series") {
                    </div>
                    </article>` 
                 }
+            }
             }
 
 
