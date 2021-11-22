@@ -1,3 +1,4 @@
+//PELICULAS//
 let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=e88616470bd2ffe2b246bcbf04162b02`;
 
 fetch(url)

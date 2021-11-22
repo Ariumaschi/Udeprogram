@@ -22,10 +22,10 @@ if (tipo2 == "all" || tipo2 == "series") {
                 vacio.innerText = `No hay coincidencias con ${querySeries}`
             } else {
 
-            for (let i = 0; i < info.length; i++) {
-                if (info[i].poster_path==null) {
-                    articulosBuscados2 +=
-                    ` <article class="articulo-peli-resultados">
+                for (let i = 0; i < info.length; i++) {
+                    if (info[i].poster_path == null) {
+                        articulosBuscados2 +=
+                            ` <article class="articulo-peli-resultados">
                    <a href="./detail-serie.html?tv_id=${info[i].id}"> 
                    <img class="imgpeli-resultados" src="./img/noImage.png" alt="Portada">
                    </a>
@@ -36,10 +36,10 @@ if (tipo2 == "all" || tipo2 == "series") {
                    <h3 class="Fecha-estreno-resultados">${info[i].first_air_date}</h3>
                    <p class="sinopsis-resultados">${info[i].overview}</p>
                    </div>
-                   </article>` 
-                } else{
-                articulosBuscados2 +=
-                    ` <article class="articulo-peli-resultados">
+                   </article>`
+                    } else {
+                        articulosBuscados2 +=
+                            ` <article class="articulo-peli-resultados">
                    <a href="./detail-serie.html?tv_id=${info[i].id}"> 
                    <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
                    </a>
@@ -50,9 +50,9 @@ if (tipo2 == "all" || tipo2 == "series") {
                    <h3 class="Fecha-estreno-resultados"> Fecha de estreno: ${info[i].first_air_date}</h3>
                    <p class="sinopsis-resultados">${info[i].overview}</p>
                    </div>
-                   </article>` 
+                   </article>`
+                    }
                 }
-            }
             }
 
 

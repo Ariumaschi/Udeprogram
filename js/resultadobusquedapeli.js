@@ -22,10 +22,10 @@ if (tipo == "all" || tipo == "movies") {
                 vacio.innerText = `No hay coincidencias con ${queryPelis}`
             } else {
 
-            for (let i = 0; i < info.length; i++) {
-              if (info[i].poster_path==null){
-                articulosBuscados +=
-                ` <article class="articulo-peli-resultados">
+                for (let i = 0; i < info.length; i++) {
+                    if (info[i].poster_path == null) {
+                        articulosBuscados +=
+                            ` <article class="articulo-peli-resultados">
                 <a href="./detailmovie.html?movie_id=${info[i].id}"> 
                 <img class="imgpeli-resultados" src="./img/noImage.png" alt="Portada">
                 </a>
@@ -36,10 +36,10 @@ if (tipo == "all" || tipo == "movies") {
                 <h3 class="Fecha-estreno-resultados">${info[i].release_date}</h3>
                 <p class="sinopsis-resultados">${info[i].overview}</p>
                 </div>
-                </article>`  
-              } else{
-                articulosBuscados +=
-                    ` <article class="articulo-peli-resultados">
+                </article>`
+                    } else {
+                        articulosBuscados +=
+                            ` <article class="articulo-peli-resultados">
                     <a href="./detailmovie.html?movie_id=${info[i].id}"> 
                     <img class="imgpeli-resultados" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="Portada">
                     </a>
@@ -51,9 +51,9 @@ if (tipo == "all" || tipo == "movies") {
                     <p class="sinopsis-resultados">${info[i].overview}</p>
                     </div>
                     </article>`
-              }
+                    }
+                }
             }
-        }
 
 
             let capturo = document.querySelector('.padre-de-peli-resultados')
