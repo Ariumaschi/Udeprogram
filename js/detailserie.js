@@ -49,6 +49,9 @@ capturo.innerHTML += generos
 
 //eneros.innerText+=data.genres;
     })
+
+
+
 // Crear array
 
 let favoritos = [];
@@ -95,6 +98,8 @@ fav.addEventListener('click', function (evento) {
     console.log(localStorage);
 
 })
- if (genero ==null) {
+
+
+if (generos == null) {
      
- }
+}
