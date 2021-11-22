@@ -32,7 +32,7 @@ if (tipo2 == "all" || tipo2 == "series") {
                    <a href="detail-serie.html">
                    <h2 class="Titulo-de-peli-resultados">${info[i].name}</h2>
                    </a>
-                   <h3 class="Fecha-estreno-resultados">${info[i].first_air_date}</h3>
+                   <h3 class="Fecha-estreno-resultados"> Fecha de estreno: ${info[i].first_air_date}</h3>
                    <p class="sinopsis-resultados">${info[i].overview}</p>
                    </div>
                    </article>` 
