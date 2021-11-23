@@ -1,6 +1,6 @@
 //Resultado de busqueda de series
 
-let queryStringSeries = location.search // capturando la query que construyo el usuario cuando busco una palabra
+let queryStringSeries = location.search // capturando la query que construyó el usuario cuando buscó una palabra
 let OLSeries = new URLSearchParams(queryStringSeries);  // a un objeto literal
 let querySeries = OLSeries.get('buscador'); // capturando el valor de la clave "buscador"
 let tipo2 = OLSeries.get('media');

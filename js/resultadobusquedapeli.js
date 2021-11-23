@@ -1,10 +1,11 @@
 
 //Resultado de busqueda de pelicula//
 
-let queryStringPelis = location.search // capturando la query que construyo el usuario cuando busco una palabra
+let queryStringPelis = location.search // capturando la query que construyó el usuario cuando buscó una palabra
 let OLPelis = new URLSearchParams(queryStringPelis);  // a un objeto literal
 let queryPelis = OLPelis.get('buscador'); // capturando el valor de la clave "buscador"
 let tipo = OLPelis.get('media');
+
 // queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso
 if (tipo == "all" || tipo == "movies") {
 

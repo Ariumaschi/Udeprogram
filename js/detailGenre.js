@@ -24,6 +24,9 @@ fetch(url)
 
         let info = data.results
 
+        //capturo el DOM//
+        let capturo = document.querySelector('.div-detailgeners')
+        
         //variable vacia para luego insertar los articulos//
         let articulosMovies = ''
 
@@ -43,8 +46,7 @@ fetch(url)
             }
         }
 
-
-        let capturo = document.querySelector('.div-detailgeners')
+        //modifico el DOM//
         capturo.innerHTML = articulosMovies;
     })
 
