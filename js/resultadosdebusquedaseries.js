@@ -56,7 +56,7 @@ if (tipo2 == "all" || tipo2 == "series") {
             }
 
 
-            let capturo3 = document.querySelector('.padre-de-peli-resultados')
+            let capturo3 = document.querySelector('.padre-de-series-resultados')
             capturo3.innerHTML = articulosBuscados2;
 
             //modifico el h1 segun la palabra que busco el usuario//

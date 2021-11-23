@@ -33,6 +33,10 @@ fetch(url)
         let info = data
         let capturo = document.querySelector(".generos")
 
+        if (info.genres == null || info.genres == 0) {
+            generos += `<p> No se encontraron generos </p>`
+        }
+
 
         for (let i = 0; i < info.genres.length; i++) {
             generos +=
