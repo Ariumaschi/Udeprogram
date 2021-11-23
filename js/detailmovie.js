@@ -1,12 +1,10 @@
 let queryString = location.search //obtengo la query string desde la url
-console.log(queryString)
 let queryString2 = new URLSearchParams(queryString) //transformo la query en un objeto literal
 let id = queryString2.get('movie_id'); // obtengo el dato del id del objeto literal
 console.log(id)
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=63cdfcbb1edb0e2c2331f8b2cb24ba9b`
 
-console.log(url)
 
 
 fetch(url)
@@ -14,14 +12,13 @@ fetch(url)
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
         let imagen = document.querySelector(".imagen");
         let titulo = document.querySelector(".titulo");
         let rating = document.querySelector(".rating");
         let fecha = document.querySelector(".fecha");
         let duracion = document.querySelector(".duracion");
-
         let sinopsis = document.querySelector(".sinopsis");
+
         if (data.poster_path == null) {
             imagen.src = "./img/noImage.png"
         } else {
@@ -91,7 +88,7 @@ fav.addEventListener('click', function (evento) {
     }
 
     else { // Guardar dato en un array: agregar un dato al array 
-        favoritos.push(id); 
+        favoritos.push(id);
         fav.innerText = "Quitar de favoritos";
     }
 
