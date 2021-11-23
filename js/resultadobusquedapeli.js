@@ -5,7 +5,7 @@ let queryStringPelis = location.search // capturando la query que construyo el u
 let OLPelis = new URLSearchParams(queryStringPelis);  // a un objeto literal
 let queryPelis = OLPelis.get('buscador'); // capturando el valor de la clave "buscador"
 let tipo = OLPelis.get('media');
-// queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso//
+// queremos a partir de la palabra que capturamos traer todo lo que tiene la api en relacion a eso
 if (tipo == "all" || tipo == "movies") {
 
     let url1 = `https://api.themoviedb.org/3/search/movie?api_key=e88616470bd2ffe2b246bcbf04162b02&query=${queryPelis}`;

@@ -1,4 +1,4 @@
-let queryString = location.search //obtengo la query desde la url
+let queryString = location.search //obtengo la query string desde la url
 console.log(queryString)
 let queryString2 = new URLSearchParams(queryString) //transformo la query en un objeto literal
 let id = queryString2.get('movie_id'); // obtengo el dato del id del objeto literal
@@ -35,9 +35,11 @@ fetch(url)
         let generos = ""
         let info = data
         let capturo = document.querySelector(".generos")
+
+
         for (let i = 0; i < info.genres.length; i++) {
             generos +=
-                `<p><a href="./detail-genres.html?id_G_Movie=${info.genres[i].id}&name_G_Movie=${info.genres[i].name}&tipo=movies">${info.genres[i].name},  </a></p>`
+                `<p><a href="./detail-genres.html?id_G_Movie=${info.genres[i].id}&name_G_Movie=${info.genres[i].name}&tipo=movies">${info.genres[i].name}.  </a></p>`
         }
         capturo.innerHTML += generos;
 
@@ -89,7 +91,7 @@ fav.addEventListener('click', function (evento) {
     }
 
     else { // Guardar dato en un array: agregar un dato al array 
-        favoritos.push(id); // en general es el id de peliculas, canciones, etc
+        favoritos.push(id); 
         fav.innerText = "Quitar de favoritos";
     }
 

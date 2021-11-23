@@ -1,6 +1,6 @@
 let formulario = document.querySelector('form');
-let inputField = document.querySelector('.search'); // ponerle la clase al input
-let message = document.querySelector('.message'); //  hacer una p y su clase es esta
+let inputField = document.querySelector('.search');
+let message = document.querySelector('.message');
 
 formulario.addEventListener('submit', function (evento) {
     evento.preventDefault()
@@ -9,8 +9,8 @@ formulario.addEventListener('submit', function (evento) {
     if (inputField.value == "") {
         message.innerText = "El campo es obligatorio";
         inputField.style.outline = "2px solid red"
-        message.style.fontWeight = "bold" // aplica para el else if tambien ya que se usa "message" en ambos casos
-        message.style.color = "red" // aplica para el else if tambien ya que se usa "message" en ambos casos
+        message.style.fontWeight = "bold" // aplica para el else if de abajo tambien ya que se usa "message" en ambos casos
+        message.style.color = "red" // aplica para el else if de abajo tambien ya que se usa "message" en ambos casos
     }
 
     else if (inputField.value.length < 3) {
