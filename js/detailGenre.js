@@ -26,7 +26,7 @@ fetch(url)
 
         //capturo el DOM//
         let capturo = document.querySelector('.div-detailgeners')
-        
+
         //variable vacia para luego insertar los articulos//
         let articulosMovies = ''
 
@@ -128,7 +128,7 @@ if (tipo == "movies") {
 }
 
 else if (tipo == "series") {
-      //HACER DESAPARECER LA SECCION DE SERIES//
+    //HACER DESAPARECER LA SECCION DE SERIES//
     let sectionMovies = document.querySelector('.section-detailgeners')
     sectionMovies.style.display = "none";
     title.innerHTML = nombreGenero2;

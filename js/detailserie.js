@@ -95,7 +95,7 @@ fav.addEventListener('click', function (evento) {
     }
 
     else { // Agregar un dato al array (no habia antes)
-        favoritos.push(id); 
+        favoritos.push(id);
         fav.innerText = "Quitar de favoritos";
     }
 
