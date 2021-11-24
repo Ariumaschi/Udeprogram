@@ -801,6 +801,12 @@ width: 100%
     flex-wrap: wrap;
 }
 
+.padre-de-series-resultados {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .articulo-peli-resultados {
     display: flex;
     background-color: #96582e6c;
